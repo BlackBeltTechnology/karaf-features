@@ -4,13 +4,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
 
-    <feature name="swagger2-parser" version="1.0.47" description="Swagger V2 Parser">
+    <feature name="swagger2-parser" version="1.0.47" description="Swagger V2 Parser" install="false">
         <feature>cxf-rs-description-swagger2</feature>
         <feature>apache-commons-io</feature>
         <bundle>mvn:hu.blackbelt.bundles.swagger-parser/io.swagger.parser/1.0.47_1</bundle>
     </feature>
 
-    <feature name="openapi-v3-parser" version="2.0.19" description="OpenAPI V3 Parser">
+    <feature name="openapi-v3-parser" version="2.0.19" description="OpenAPI V3 Parser" install="false">
         <feature>cxf-rs-description-swagger2</feature>
         <feature>cxf-rs-description-openapi-v3</feature>
         <feature>apache-commons-io</feature>
@@ -18,7 +18,7 @@
         <bundle>mvn:hu.blackbelt.bundles.swagger-parser-v3/io.swagger.parser.v3/2.0.19_2</bundle>
     </feature>
 
-    <feature name="openapi-generator" version="4.3.1" description="OpenAPI Generator">
+    <feature name="openapi-generator" version="4.3.1" description="OpenAPI Generator" install="false">
         <feature>cxf-jackson</feature>
         <feature>cxf-rs-description-swagger2</feature>
         <feature>cxf-rs-description-openapi-v3</feature>

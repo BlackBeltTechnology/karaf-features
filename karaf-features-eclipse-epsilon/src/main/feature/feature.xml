@@ -19,7 +19,7 @@
         <bundle>mvn:hu.blackbelt.bundles.eclipse-epsilon/org.eclipse.epsilon/1.5.1_2</bundle>
     </feature>
 
-    <feature name="eclipse-epsilon-2" version="2.3.0" description="Eclipse Epsilon" install="false">
+    <feature name="eclipse-epsilon-2" version="2.4.0" description="Eclipse Epsilon" install="false">
         <feature>guava-27</feature>
         <feature>antlr3</feature>
         <feature>apache-commons-collections</feature>
