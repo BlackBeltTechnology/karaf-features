@@ -180,6 +180,7 @@
             </modules>
         </profile>
 
+        <!--
         <profile>
             <id>sign-artifacts</id>
             <build>
@@ -199,6 +200,7 @@
                 </plugins>
             </build>
         </profile>
+        -->
 
         <profile>
             <id>release-central</id>
