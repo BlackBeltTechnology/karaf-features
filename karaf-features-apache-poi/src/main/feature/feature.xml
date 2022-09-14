@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="apache-poi-${project.version}"
+    xmlns="http://karaf.apache.org/xmlns/features/v1.5.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
+
+    <feature name="apache-poi3" version="3.17" description="Apache POI 3" install="false">
+        <feature>bouncycastle</feature>
+        <feature>apache-xmlbeans2</feature>
+        <feature>apache-commons-codec</feature>
+        <feature>apache-commons-collections4</feature>
+        <bundle>mvn:hu.blackbelt.bundles.poi/org.apache.poi/3.17_1</bundle>
+    </feature>
+
+    <feature name="apache-poi4" version="4.1.2" description="Apache POI 4" install="false">
+        <feature>bouncycastle</feature>
+        <feature>apache-xmlbeans3</feature>
+        <feature>apache-commons-codec</feature>
+        <feature>apache-commons-collections4</feature>
+        <feature>apache-commons-compress</feature>
+        <feature>apache-commons-math3</feature>
+        <feature>apache-commons-bcel</feature>
+        <feature>apache-commons-io</feature>
+        <bundle>mvn:hu.blackbelt.bundles.poi/org.apache.poi/4.1.2_2</bundle>
+    </feature>
+</features>

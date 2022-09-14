@@ -1,0 +1,24 @@
+# Karaf feature apache httpclient
+
+image::https://github.com/BlackBeltTechnology/karaf-features-apache-httpclient/actions/workflows/build.yml/badge.svg?branch=develop[link="https://github.com/BlackBeltTechnology/karaf-features-apache-httpclient/actions/workflows/build.yml" float="center"]
+
+Externsion to karaf which adds BouncyCastle bundles to karaf features.
+
+To install javax features required. Please add the folloeing repository to your distribution: 
+
+- mvn:hu.blackbelt.karaf.features/apache-commons/2.0.0/xml/features (Github: https://github.com/BlackBeltTechnology/karaf-features-apache-commons)
+
+
+## Features:
+
+- apache-httpclient3 3.1.2
+- apache-httpclient4 4.5.9
+
+== Contributing to the project
+
+Everyone is welcome to contribute to karaf-features-apache-httpclient! As a starter, please read the corresponding link:CONTRIBUTING.adoc[CONTRIBUTING] guide for details!
+
+
+== License
+
+This project is licensed under the https://www.apache.org/licenses/LICENSE-2.0[Apache License 2.0].

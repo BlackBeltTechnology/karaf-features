@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="openapi-parser-${project.version}"
+    xmlns="http://karaf.apache.org/xmlns/features/v1.5.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
+
+    <feature name="swagger2-parser" version="1.0.47" description="Swagger V2 Parser">
+        <feature>cxf-rs-description-swagger2</feature>
+        <feature>apache-commons-io</feature>
+        <bundle>mvn:hu.blackbelt.bundles.swagger-parser/io.swagger.parser/1.0.47_1</bundle>
+    </feature>
+
+    <feature name="openapi-v3-parser" version="2.0.19" description="OpenAPI V3 Parser">
+        <feature>cxf-rs-description-swagger2</feature>
+        <feature>cxf-rs-description-openapi-v3</feature>
+        <feature>apache-commons-io</feature>
+        <feature>swagger2-parser</feature>
+        <bundle>mvn:hu.blackbelt.bundles.swagger-parser-v3/io.swagger.parser.v3/2.0.19_2</bundle>
+    </feature>
+
+    <feature name="openapi-generator" version="4.3.1" description="OpenAPI Generator">
+        <feature>cxf-jackson</feature>
+        <feature>cxf-rs-description-swagger2</feature>
+        <feature>cxf-rs-description-openapi-v3</feature>
+        <feature>swagger2-parser</feature>
+        <feature>openapi-v3-parser</feature>
+        <feature>apache-commons-io</feature>
+        <bundle>mvn:com.github.ben-manes.caffeine/caffeine/2.8.4</bundle>
+        <bundle>mvn:com.github.jknack/handlebars/4.2.0</bundle>
+        <bundle>mvn:com.samskivert/jmustache/1.15</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.openapitools.openapi-generator/org.openapitools.openapi-generator/4.3.1_3</bundle>
+    </feature>
+    
+</features>
