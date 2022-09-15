@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="javassist-${project.version}"
+    xmlns="http://karaf.apache.org/xmlns/features/v1.5.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
+
+    <!-- Repository -->
+    <feature name="javassist" version="3.25.0-GA" description="Javassists" install="false">
+        <bundle>mvn:org.javassist/javassist/3.25.0-GA</bundle>
+    </feature>
+
+</features>
