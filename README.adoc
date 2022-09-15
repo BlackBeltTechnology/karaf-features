@@ -1,0 +1,247 @@
+# Karaf features
+
+image::https://github.com/BlackBeltTechnology/karaf-features/actions/workflows/build.yml/badge.svg?branch=develop[link="https://github.com/BlackBeltTechnology/karaf-features/actions/workflows/build.yml" float="center"]
+
+
+## ANTLR
+
+Extension to karaf which adds ANTLR all major version to karaf features.
+
+To use add to your `features.xml`
+
+`<repository>mvn:hu.blackbelt.karaf.features/antlr-features/2.0.0/xml/features</repository>`
+
+### Features:
+- antlr2 (Antlr 2.7)
+- antlr3 (Antlr 3.4)
+- antlr4 (Antlr 4.5.1)
+- stringtemplate3 (StringTemplate 3.2)
+
+
+## Apache commons
+
+Externsion to karaf which adds Apache Commons bundles to karaf features.
+
+To use add to your `features.xml`
+
+`<repository>mvn:hu.blackbelt.karaf.features/appache-commons-features/2.0.0/xml/features</repository>`
+
+### Features:
+apache-commons-beanutils (Apache Commons Bean Utils 1.9.4)
+apache-commons-collections (Apache Commons Collections 3.2.2)
+apache-commons-collections4 4.4 Apache Commons Collections4)
+apache-commons-io (Apache Commons IO 2.11.0)
+apache-commons-pool (Apache Commons Pool 1.6)
+apache-commons-pool2 (Apache Commons Pool2 2.11.1)
+apache-commons-dbcp2 (Apache Commons DBCP2 2.9.0)
+apache-commons-codec (Apache Commons Codec 1.15)
+apache-commons-fileupload (Apache Commons Fileupload 1.4)
+apache-commons-lang (Apache Commons Lang 2.6)
+apache-commons-logging (Apache Commons Logging 1.1.1)
+apache-commons-configuration (Apache Commons Configuration 1.10)
+apache-commons-math3 (Apache Commons Math3 3.6.1)
+apache-commons-math (Apache Commons Math 2.2)
+apache-commons-lang3 (Apache Commons Lang3 3.12.0)
+apache-commons-csv (Apache Commons CSV 1.9.0)
+apache-commons-compress (Apache Commons Compress 1.21)
+apache-commons-bcel (Apache Common BCel 5.2)
+apache-xmlbeans2 (Apache XMLBeans 2.6.0)
+apache-xmlbeans3 (Apache XMLBeans 3.1.0)
+apache-jexl3 (Apache JEXL3 3.2.1)
+
+## Apache httpclient
+
+To use add to your `features.xml`
+
+`<repository>mvn:hu.blackbelt.karaf.features/appache-commons-features/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/appache-httpclient-features/2.0.0/xml/features</repository>`
+
+### Features:
+- apache-httpclient3 (3.1.2)
+- apache-httpclient4 (4.5.9)
+
+
+## Apache POI library
+
+Extension to karaf which adds Apache POI bundles to karaf features.
+
+To use add to your `features.xml`
+
+`<repository>mvn:hu.blackbelt.karaf.features/appache-commons-features/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/bouncycastle-features/2.0.0/xml/features</repository>`
+
+### Features:
+- apache-poi3 (Apache POI 3.13.1)
+- apache-poi4 (Apache POI 4.0.1_1)
+
+## BouncyCastle
+
+Extension to karaf which adds BouncyCastle bundles to karaf features.
+
+### Features:
+- bouncycastle (BouncyCastle 1.70)
+- bouncycastle-1.69 (BouncyCastle 1.69)
+- bouncycastle-1.70 (BouncyCastle 1.70)
+
+
+## Eclipse Modeling Framework
+
+Extension to karaf which adds BouncyCastle bundles to karaf features.
+
+### Features:
+- eclipse-emf (Eclipse EMF Ecore 2.21.0)
+- eclipse-emf-2.12 (Eclipse EMF Ecore 2.12.0)
+- eclipse-emf-2.15 (Eclipse EMF Ecore 2.15.0)
+- eclipse-emf-2.18 (Eclipse EMF Ecore 2.18.0)
+- eclipse-emf-2.21 (Eclipse EMF Ecore 2.21.0)
+
+
+## Eclipse Epsilon
+
+Extension to karaf which adds Eclipse Epsilon bundles to karaf features.
+
+To use add to your `features.xml`
+
+`<repository>mvn:hu.blackbelt.karaf.features/antlr/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/google/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/eclipse-emf/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/appache-commons-features/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/bouncycastle-features/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/apache-httpclient/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/apache-poi/2.0.0/xml/features</repository>`
+
+### Features:
+- eclipse-epsilon (Eclipse Epsilon 1.5.1)
+- eclipse-epsilon-1 (Eclipse Epsilon 1.5.1)
+- eclipse-epsilon-2 (Eclipse Epsilon 2.4.0)
+
+## Eclipse XText
+
+Extension to karaf which adds Eclipse Xtext bundles to karaf features.
+
+To use add to your `features.xml`
+
+`<repository>mvn:hu.blackbelt.karaf.features/antlr/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/google/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/apache-httpclient/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/google/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/eclipse-emf/2.0.0/xml/features</repository>`
+
+### Features:
+- eclipse-compatibility (Eclipse XText runtime 3.8.0)
+- eclipse-xtext (Eclipse XText runtime 2.22.0)
+- eclipse-xtext-2_18 (Eclipse XText runtime 2.18.0)
+- eclipse-xtext-2_22 (Eclipse XText runtime 2.22.0)
+
+## Google libraries
+
+Extension to karaf which adds Google libraries bundles to karaf features.
+
+To use add to your `features.xml`
+
+`<repository>mvn:hu.blackbelt.karaf.features/appache-commons-features/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/appache-httpclient-features/2.0.0/xml/features</repository>`
+
+Any any version CXF between 3.3.1 and 3.4.8 (later version may works, but not tested)
+
+`<repository>mvn:org.apache.cxf.karaf/apache-cxf/3.4.8/xml/features</repository>`
+
+### Features:
+- jimfs (Google JimFS 1.1)
+- guava (Google Guava 20 20.0)
+- guava-18 (Google Guava 18 18.0)
+- guava-19 (Google Guava 19 19.0)
+- guava-20 (Google Guava 20 20.0)
+- guava-21 (Google Guava 21 21.0)
+- guava-22 (Google Guava 22 22.0)
+- guava-23 (Google Guava 23 23.6)
+- guava-24 (Google Guava 24 24.1)
+- guava-25 (Google Guava 25 25.1)
+- guava-26 (Google Guava 26 26.0)
+- guava-27 (Google Guava 27 27.1)
+- guava-28 (Google Guava 28 28.2)
+- guava-29 (Google Guava 29 29.0)
+- guava-30 (Google Guava 30 30.1.1)
+- guava-31 (Google Guava 31 31.1)
+- guice-4 (Google Guice 4.2.3)
+- guice-5 (Google Guice 5.1.0)
+- guice (Google Guice 4.2.3)
+- gson (Gson 2.8.8)
+- google-api-client (Google client API 1.23.0)
+- google-api-services-oauth2 (Google Oauth2 Service API 1.23.0)
+- google-api-services-calendar (Google Calendar Service API 1.23.0)
+- google-gdata (Google GData 1.47.1.1)
+
+## Javassist
+
+Extension to karaf which adds Javassist bundles to karaf features.
+
+### Features:
+- javassist (Javassists 3.25.0-GA)
+
+## JDBC Drivers
+
+Extension to karaf which adds JDBC Driver bundles to karaf features.
+
+### Features:
+- jdbc-h2 (H2 JDBC Driver 1.4.200)
+- jdbc-postgresql (PostgreSQL JDBC Driver 42.2.24)
+- jdbc-oracle_11_2 (Oracle 11.2 JDBC Driver 11.2.0.4)
+- jdbc-oracle_12_1 (Oracle 12.1 JDBC Driver 12.1.0.2)
+- jdbc-oracle_12_2 (Oracle 12.2 JDBC Driver 12.2.0.1)
+- jdbc-oracle_18_3 (Oracle 18.3 JDBC Driver 18.3.0.0)
+- jdbc-oracle (Oracle 18.3 JDBC Driver 18.3.0.0)
+- jdbc-hsqldb_2_3 (HSQLDB 2.3 JDBC Driver 2.3.6)
+- jdbc-hsqldb_2_4 (HSQLDB 2.4 JDBC Driver 2.4.1)
+- jdbc-hsqldb_2_5 (HSQLDB 2.4 JDBC Driver 2.5.2)
+- jdbc-hsqldb_2_6 (HSQLDB 2.4 JDBC Driver 2.6.0)
+- jdbc-hsqldb (HSQLDB 2.4 JDBC Driver 2.6.0)
+
+## JXLS
+
+Extension to karaf which adds JXLS bundles to karaf features.
+
+To use add to your `features.xml`
+
+`<repository>mvn:hu.blackbelt.karaf.features/bouncycastle/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/appache-commons-features/2.0.0/xml/features</repository>`
+`<repository>mvn:hu.blackbelt.karaf.features/appache-poi-features/2.0.0/xml/features</repository>`
+
+There are not (yet) feature packed logback core dependency:
+- mvn:ch.qos.logback/logback-core/1.2.3
+
+### Features:
+- jxls (JXLS 2.10.0)
+
+## OpenAPI generator
+
+Extension to karaf which adds OpenAPI generator bundles to karaf features.
+
+### Features:
+- swagger2-parser (Swagger V2 Parser 1.0.47)
+- openapi-v3-parser (OpenAPI V3 Parser 2.0.19)
+- openapi-generator (OpenAPI Generator 4.3.1)
+
+
+## SubEthaMail
+
+Extension to karaf which adds SubEthaMail server bundles to karaf features.
+
+### Features:
+- subethamail (SubEtha Mail 3.1.7)
+
+## Tinybundles
+
+Extension to karaf which adds Tinybundles bundles to karaf features.
+
+### Features:
+- tinybundles (Tiny Bundles 3.0.0)
+
+== Contributing to the project
+
+Everyone is welcome to contribute to karaf-features! As a starter, please read the corresponding link:CONTRIBUTING.adoc[CONTRIBUTING] guide for details!
+
+
+== License
+
+This project is licensed under the https://www.apache.org/licenses/LICENSE-2.0[Apache License 2.0].

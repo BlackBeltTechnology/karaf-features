@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="subethamail-${project.version}"
+    xmlns="http://karaf.apache.org/xmlns/features/v1.5.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
+
+    <feature name="subethamail" version="3.1.7" description="SubEtha Mail" install="false">
+            <!-- <bundle>mvn:javax.mail/javax.mail-api/1.6.2</bundle> -->
+            <bundle>mvn:com.sun.mail/mailapi/1.6.2</bundle>
+            <bundle>mvn:com.sun.mail/javax.mail/1.6.2</bundle>
+            <bundle>mvn:com.sun.mail/smtp/1.6.2</bundle>
+            <bundle>mvn:com.sun.mail/imap/1.6.2</bundle>
+            <bundle>mvn:com.sun.mail/pop3/1.6.2</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.subethasmtp/org.subethamail.subethasmtp/3.1.7_1</bundle>
+    </feature>
+
+</features>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="antlr-${project.version}"
+    xmlns="http://karaf.apache.org/xmlns/features/v1.5.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
+
+    <feature name="antlr2" version="2.7" description="Antlr 2" install="false">
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.antlr/2.7.7_3</bundle>
+    </feature>
+    
+    <feature name="antlr3" version="3.4" description="Antlr 3" install="false">
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.antlr/3.4_1</bundle>
+    </feature>
+
+    <feature name="antlr4" version="4.5.1" description="Antlr 4" install="false">
+        <bundle>mvn:org.antlr/antlr4-runtime/4.5.1-1</bundle>
+    </feature>
+
+    <feature name="stringtemplate3" version="3.2" description="StringTemplate" install="false">
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.stringtemplate/3.2_5</bundle>
+    </feature>
+
+</features>
