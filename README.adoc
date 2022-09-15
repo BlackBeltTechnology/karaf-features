@@ -1,4 +1,4 @@
-# Karaf feature
+# Karaf features
 
 image::https://github.com/BlackBeltTechnology/karaf-features/actions/workflows/build.yml/badge.svg?branch=develop[link="https://github.com/BlackBeltTechnology/karaf-features/actions/workflows/build.yml" float="center"]
 

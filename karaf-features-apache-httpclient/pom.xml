@@ -105,8 +105,6 @@
                                     <descriptors>
                                         <descriptor>mvn:org.apache.karaf.features/framework/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/standard/${karaf-version}/xml/features</descriptor>
-                                        <descriptor>mvn:org.apache.karaf.features/enterprise/${karaf-version}/xml/features</descriptor>
-                                        <descriptor>mvn:org.apache.karaf.features/spring/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-commons-features/${project.version}/xml/features</descriptor>
                                         <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                                     </descriptors>
@@ -143,28 +141,12 @@
                     <version>${karaf-version}</version>
                 </dependency>
                 <dependency>
-                    <groupId>org.apache.karaf.features</groupId>
-                    <artifactId>enterprise</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${karaf-version}</version>
-                </dependency>
-                <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
                     <artifactId>apache-commons-features</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
                     <scope>runtime</scope>
                     <version>${project.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.apache.karaf.features</groupId>
-                    <artifactId>spring</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${karaf-version}</version>
                 </dependency>
             </dependencies>
         </profile>
