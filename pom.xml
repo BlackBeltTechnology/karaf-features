@@ -181,7 +181,6 @@
             </modules>
         </profile>
 
-        <!--
         <profile>
             <id>sign-artifacts</id>
             <build>
@@ -189,7 +188,7 @@
                     <plugin>
                         <groupId>org.simplify4u.plugins</groupId>
                         <artifactId>sign-maven-plugin</artifactId>
-                        <version>0.3.1</version>
+                        <version>1.0.1</version>
                         <executions>
                             <execution>
                                 <goals>
@@ -201,7 +200,6 @@
                 </plugins>
             </build>
         </profile>
-        -->
 
         <profile>
             <id>release-central</id>
