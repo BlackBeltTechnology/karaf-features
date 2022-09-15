@@ -2,7 +2,6 @@
 
 image::https://github.com/BlackBeltTechnology/karaf-features/actions/workflows/build.yml/badge.svg?branch=develop[link="https://github.com/BlackBeltTechnology/karaf-features/actions/workflows/build.yml" float="center"]
 
-# Modules
 
 ## ANTLR
 
@@ -240,7 +239,7 @@ Extension to karaf which adds Tinybundles bundles to karaf features.
 
 == Contributing to the project
 
-Everyone is welcome to contribute to karaf-features-antlr! As a starter, please read the corresponding link:CONTRIBUTING.adoc[CONTRIBUTING] guide for details!
+Everyone is welcome to contribute to karaf-features! As a starter, please read the corresponding link:CONTRIBUTING.adoc[CONTRIBUTING] guide for details!
 
 
 == License

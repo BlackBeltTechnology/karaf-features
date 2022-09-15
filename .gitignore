@@ -27,8 +27,6 @@
 /**/.credentials
 /**/.work/
 /**/*.versionsBackup
-/**/*.json-angular
-/**/*$py.class
 .output
 .metadata
 bin/
@@ -40,7 +38,6 @@ tmp/
 local.properties
 .settings/
 .loadpath
-.recommenders
 .externalToolBuilders/
 *.pydevproject
 .cproject
@@ -49,10 +46,6 @@ local.properties
 .target
 .tern-project
 .texlipse
-.springBeans
-.recommenders/
 **/.DS_Store
-wercker.env
-/**/.wercker
 **/GSModel.log*
 **/.flattened-pom.xml
