@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="apache-httpclient-${project.version}"
+    xmlns="http://karaf.apache.org/xmlns/features/v1.5.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
+
+    <feature name="apache-httpclient3" version="3.1.2" install="false">
+        <feature>apache-commons-codec</feature>
+        <bundle>mvn:org.apache.geronimo.bundles/commons-httpclient/3.1_2</bundle>
+    </feature>
+    
+    <feature name="apache-httpclient4" version="4.5.9" install="false">
+        <feature>http</feature>
+        <bundle>mvn:org.apache.httpcomponents/httpasyncclient-osgi/4.1.4</bundle>
+        <bundle>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.11</bundle>
+        <bundle>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.9</bundle>
+    </feature>
+    
+</features>
