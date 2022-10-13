@@ -14,7 +14,7 @@
         <karaf-version>4.3.7</karaf-version>
         <deployOnly>false</deployOnly>
         <maven>3.8.3</maven>
-        <cxf-version>3.4.8</cxf-version>
+        <cxf-version>3.5.4</cxf-version>
     </properties>
 
     <description>Karaf features parent</description>
