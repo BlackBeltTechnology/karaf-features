@@ -113,6 +113,7 @@
                                     <features>
                                         <feature>apache-poi3</feature>
                                         <feature>apache-poi4</feature>
+                                        <feature>apache-poi5</feature>
                                     </features>
                                 </configuration>
                             </execution>

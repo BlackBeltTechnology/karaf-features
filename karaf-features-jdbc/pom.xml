@@ -119,6 +119,7 @@
                                         <feature>jdbc-hsqldb_2_4</feature>
                                         <feature>jdbc-hsqldb_2_5</feature>
                                         <feature>jdbc-hsqldb_2_6</feature>
+                                        <feature>jdbc-hsqldb_2_7</feature>
                                         <feature>jdbc-hsqldb</feature>
                                     </features>
                                 </configuration>

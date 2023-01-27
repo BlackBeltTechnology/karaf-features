@@ -97,9 +97,9 @@
                                     <descriptors>
                                         <descriptor>mvn:org.apache.karaf.features/framework/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/standard/${karaf-version}/xml/features</descriptor>
+                                        <descriptor>mvn:org.apache.karaf.features/specs/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/enterprise/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/spring/${karaf-version}/xml/features</descriptor>
-                                        <descriptor>mvn:org.apache.cxf.karaf/apache-cxf/${cxf-version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-httpclient-features/${project.version}/xml/features</descriptor>
                                         <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                                     </descriptors>
@@ -111,6 +111,8 @@
                                     </framework>
                                     <features>
                                         <feature>jimfs</feature>
+                                        <feature>jimfs1.1</feature>
+                                        <feature>jimfs1.2</feature>
                                         <feature>guava</feature>
                                         <feature>guava-20</feature>
                                         <feature>guava-21</feature>
@@ -158,6 +160,14 @@
                 </dependency>
                 <dependency>
                     <groupId>org.apache.karaf.features</groupId>
+                    <artifactId>specs</artifactId>
+                    <classifier>features</classifier>
+                    <type>xml</type>
+                    <scope>runtime</scope>
+                    <version>${karaf-version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.apache.karaf.features</groupId>
                     <artifactId>enterprise</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
@@ -179,14 +189,6 @@
                     <type>xml</type>
                     <scope>runtime</scope>
                     <version>${project.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.apache.cxf.karaf</groupId>
-                    <artifactId>apache-cxf</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${cxf-version}</version>
                 </dependency>
             </dependencies>
         </profile>

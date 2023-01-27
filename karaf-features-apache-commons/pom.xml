@@ -122,6 +122,8 @@
                                         <feature>apache-commons-lang</feature>
                                         <feature>apache-commons-logging</feature>
                                         <feature>apache-commons-configuration</feature>
+                                        <feature>apache-commons-configuration2</feature>
+                                        <feature>apache-commons-text</feature>
                                         <feature>apache-commons-math3</feature>
                                         <feature>apache-commons-math</feature>
                                         <feature>apache-commons-lang3</feature>
@@ -130,6 +132,7 @@
                                         <feature>apache-commons-bcel</feature>
                                         <feature>apache-xmlbeans2</feature>
                                         <feature>apache-xmlbeans3</feature>
+                                        <feature>apache-xmlbeans5</feature>
                                         <feature>apache-jexl3</feature>
                                     </features>
                                 </configuration>
