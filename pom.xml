@@ -11,10 +11,10 @@
 
     <properties>
         <revision>2.0.2-SNAPSHOT</revision>
-        <karaf-version>4.3.7</karaf-version>
+        <karaf-version>4.4.3</karaf-version>
         <deployOnly>false</deployOnly>
         <maven>3.8.3</maven>
-        <cxf-version>3.4.8</cxf-version>
+        <cxf-version>3.5.5</cxf-version>
 
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
