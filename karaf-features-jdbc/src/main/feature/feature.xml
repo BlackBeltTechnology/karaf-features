@@ -28,29 +28,29 @@
         <bundle>mvn:com.h2database/h2/1.4.200</bundle>
     </feature>
 
-    <feature name="jdbc-postgresql" version="42.2.24" description="PostgreSQL JDBC Driver" install="false">
-        <feature dependency="true">wrap</feature>
-        <feature dependency="true">transaction-api</feature>
-        <bundle><![CDATA[wrap:mvn:org.postgresql/postgresql/42.2.24$Bundle-Name=Postgresql Driver&Bundle-SymbolicName=org.postgresql&Bundle-Version=42.2.24&Export-Package=org.postgresql.*]]></bundle>
+    <feature name="jdbc-postgresql" version="42.5.1" description="PostgreSQL JDBC Driver" install="false">
+        <feature prerequisite="true" dependency="true">wrap</feature>
+        <feature prerequisite="true" dependency="true">transaction-api</feature>
+        <bundle><![CDATA[wrap:mvn:org.postgresql/postgresql/42.5.1$Bundle-Name=Postgresql Driver&Bundle-SymbolicName=org.postgresql&Bundle-Version=42.5.1&Export-Package=org.postgresql.*]]></bundle>
     </feature>
 
     <feature name="jdbc-oracle_11_2" version="11.2.0.4" description="Oracle 11.2 JDBC Driver" install="false">
-        <feature dependency="true">wrap</feature>
+        <feature prerequisite="true" dependency="true">wrap</feature>
         <bundle><![CDATA[wrap:mvn:com.oracle.jdbc/ojdbc6/11.2.0.4$Bundle-Name=Oracle Driver&Bundle-SymbolicName=oracle&Bundle-Version=11.2.0.4]]></bundle>
     </feature>
 
     <feature name="jdbc-oracle_12_1" version="12.1.0.2" description="Oracle 12.1 JDBC Driver" install="false">
-        <feature dependency="true">wrap</feature>
+        <feature prerequisite="true" dependency="true">wrap</feature>
         <bundle><![CDATA[wrap:mvn:com.oracle.jdbc/ojdbc7/12.1.0.2$Bundle-Name=Oracle Driver&Bundle-SymbolicName=oracle&Bundle-Version=12.1.0.2]]></bundle>
     </feature>
 
     <feature name="jdbc-oracle_12_2" version="12.2.0.1" description="Oracle 12.2 JDBC Driver" install="false">
-        <feature dependency="true">wrap</feature>
+        <feature prerequisite="true" dependency="true">wrap</feature>
         <bundle><![CDATA[wrap:mvn:com.oracle.jdbc/ojdbc8/12.2.0.1$Bundle-Name=Oracle Driver&Bundle-SymbolicName=oracle&Bundle-Version=12.2.0.1]]></bundle>
     </feature>
 
     <feature name="jdbc-oracle_18_3" version="18.3.0.0" description="Oracle 18.3 JDBC Driver" install="false">
-        <feature dependency="true">wrap</feature>
+        <feature prerequisite="true" dependency="true">wrap</feature>
         <bundle><![CDATA[wrap:mvn:com.oracle.jdbc/ojdbc8/18.3.0.0$Bundle-Name=Oracle Driver&Bundle-SymbolicName=oracle&Bundle-Version=18.3.0.0]]></bundle>
     </feature>
 
@@ -66,16 +66,20 @@
         <bundle>mvn:org.hsqldb/hsqldb/2.4.1</bundle>
     </feature>
 
-    <feature name="jdbc-hsqldb_2_5" version="2.5.2" description="HSQLDB 2.4 JDBC Driver" install="false">
+    <feature name="jdbc-hsqldb_2_5" version="2.5.2" description="HSQLDB 2.5 JDBC Driver" install="false">
         <bundle>mvn:org.hsqldb/hsqldb/2.5.2</bundle>
     </feature>
 
-    <feature name="jdbc-hsqldb_2_6" version="2.6.0" description="HSQLDB 2.4 JDBC Driver" install="false">
+    <feature name="jdbc-hsqldb_2_6" version="2.6.0" description="HSQLDB 2.6 JDBC Driver" install="false">
         <bundle>mvn:org.hsqldb/hsqldb/2.5.2</bundle>
     </feature>
 
-    <feature name="jdbc-hsqldb" version="2.6.0" description="HSQLDB 2.4 JDBC Driver" install="false">
-        <feature>jdbc-hsqldb_2_6</feature>
+    <feature name="jdbc-hsqldb_2_7" version="2.7.1" description="HSQLDB 2.7 JDBC Driver" install="false">
+        <bundle>mvn:org.hsqldb/hsqldb/2.7.1</bundle>
+    </feature>
+
+    <feature name="jdbc-hsqldb" version="2.6.0" description="HSQLDB 2.7 JDBC Driver" install="false">
+        <feature>jdbc-hsqldb_2_7</feature>
     </feature>
 
 </features>

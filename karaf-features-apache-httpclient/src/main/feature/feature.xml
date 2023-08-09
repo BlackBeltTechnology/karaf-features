@@ -30,7 +30,7 @@
     </feature>
     
     <feature name="apache-httpclient4" version="4.5.13" install="false">
-        <feature>http</feature>
+        <feature prerequisite="true" dependency="true">http</feature>
         <bundle>mvn:org.apache.httpcomponents/httpasyncclient-osgi/4.1.5</bundle>
         <bundle>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.15</bundle>
         <bundle>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.13</bundle>
