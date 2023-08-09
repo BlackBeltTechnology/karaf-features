@@ -162,7 +162,8 @@
                 <module>karaf-features-jxls</module>
                 <module>karaf-features-subethamail</module>
                 <module>karaf-features-tinybundles</module>
-<!--                <module>karaf-features-openapi-generator</module> -->
+                <module>karaf-features-jasperreports</module>
+                <!--                <module>karaf-features-openapi-generator</module> -->
             </modules>
         </profile>
 
