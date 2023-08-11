@@ -100,7 +100,7 @@
                                         <descriptor>mvn:org.apache.karaf.features/standard/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/enterprise/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/spring/${karaf-version}/xml/features</descriptor>
-                                        <descriptor>mvn:org.apache.cxf.karaf/apache-cxf/${cxf-version}/xml/features</descriptor>
+                                        <descriptor>mvn:org.apache.karaf.features/specs/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/antlr-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/bouncycastle-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-commons-features/${project.version}/xml/features</descriptor>
@@ -145,19 +145,19 @@
                 </dependency>
                 <dependency>
                     <groupId>org.apache.karaf.features</groupId>
-                    <artifactId>enterprise</artifactId>
+                    <artifactId>specs</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
                     <scope>runtime</scope>
                     <version>${karaf-version}</version>
                 </dependency>
                 <dependency>
-                    <groupId>org.apache.cxf.karaf</groupId>
-                    <artifactId>apache-cxf</artifactId>
+                    <groupId>org.apache.karaf.features</groupId>
+                    <artifactId>enterprise</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
                     <scope>runtime</scope>
-                    <version>${cxf-version}</version>
+                    <version>${karaf-version}</version>
                 </dependency>
                 <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
