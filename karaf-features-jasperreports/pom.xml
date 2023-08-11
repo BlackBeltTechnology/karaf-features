@@ -121,6 +121,7 @@
                                     </framework>
                                     <features>
                                         <feature>jasperreports-jackson</feature>
+                                        <feature>jasperreports-commons</feature>
                                         <feature>jasperreports</feature>
                                     </features>
                                 </configuration>
