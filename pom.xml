@@ -29,6 +29,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/BlackBeltTechnology/karaf-features-${project.artifactId}.git</connection>
+        <!--suppress UnresolvedMavenProperty -->
         <developerConnection>
             scm:git:ssh://${git.username}@github.com:BlackBeltTechnology/karaf-features-${project.artifactId}.git
         </developerConnection>
