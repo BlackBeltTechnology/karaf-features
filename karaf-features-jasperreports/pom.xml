@@ -8,9 +8,19 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>apache-poi-features</artifactId>
+    <artifactId>jasperreports-features</artifactId>
     <packaging>feature</packaging>
-    <name>Apache POI Karaf features</name>
+    <name>JasperReports karaf features</name>
+
+    <properties>
+        <jackson.version>2.15.2</jackson.version>
+        <jackson.databind.version>2.15.2</jackson.databind.version>
+        <servicemix.specs.version>2.9.0</servicemix.specs.version>
+        <woodstox.stax2-api.version>4.2.1</woodstox.stax2-api.version>
+        <specs.jaxws.api.version>2.3_2</specs.jaxws.api.version>
+        <servicemix.jaxrs.specs.version>2.9.1</servicemix.jaxrs.specs.version>
+        <javax.transaction.version>1.2</javax.transaction.version>
+    </properties>
 
     <build>
         <resources>
@@ -20,7 +30,7 @@
                 <targetPath>${project.build.directory}/feature</targetPath>
             </resource>
         </resources>
-
+            
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -34,7 +44,6 @@
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.karaf.tooling</groupId>
                 <artifactId>karaf-maven-plugin</artifactId>
@@ -111,9 +120,9 @@
                                         <feature>shell-compat</feature>
                                     </framework>
                                     <features>
-                                        <feature>apache-poi3</feature>
-                                        <feature>apache-poi4</feature>
-                                        <feature>apache-poi5</feature>
+                                        <feature>jasperreports-jackson</feature>
+                                        <feature>jasperreports-commons</feature>
+                                        <feature>jasperreports</feature>
                                     </features>
                                 </configuration>
                             </execution>
@@ -138,14 +147,6 @@
                     <version>${karaf-version}</version>
                 </dependency>
                 <dependency>
-                    <groupId>org.apache.karaf.features</groupId>
-                    <artifactId>enterprise</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${karaf-version}</version>
-                </dependency>
-                <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
                     <artifactId>apache-commons-features</artifactId>
                     <classifier>features</classifier>
@@ -160,6 +161,14 @@
                     <type>xml</type>
                     <scope>runtime</scope>
                     <version>${project.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.apache.karaf.features</groupId>
+                    <artifactId>enterprise</artifactId>
+                    <classifier>features</classifier>
+                    <type>xml</type>
+                    <scope>runtime</scope>
+                    <version>${karaf-version}</version>
                 </dependency>
                 <dependency>
                     <groupId>org.apache.karaf.features</groupId>

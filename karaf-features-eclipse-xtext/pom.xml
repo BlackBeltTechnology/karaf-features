@@ -114,8 +114,7 @@
                                     <features>
                                         <feature>eclipse-compatibility</feature>
                                         <feature>eclipse-xtext</feature>
-                                        <feature>eclipse-xtext-2_18</feature>
-                                        <feature>eclipse-xtext-2_22</feature>
+                                        <feature>eclipse-xtext-2_29</feature>
                                     </features>
                                 </configuration>
                             </execution>

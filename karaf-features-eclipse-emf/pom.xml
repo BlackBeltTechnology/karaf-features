@@ -110,6 +110,12 @@
                                     </framework>
                                     <features>
                                         <feature>eclipse-emf</feature>
+                                        <feature>eclipse-emf-2.12</feature>
+                                        <feature>eclipse-emf-2.15</feature>
+                                        <feature>eclipse-emf-2.18</feature>>
+                                        <feature>eclipse-emf-2.21</feature>
+                                        <feature>eclipse-emf-2.27</feature>
+                                        <feature>eclipse-emf-2.34</feature>
                                     </features>
                                 </configuration>
                             </execution>
