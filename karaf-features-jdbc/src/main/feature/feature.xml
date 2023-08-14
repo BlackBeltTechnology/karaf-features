@@ -78,7 +78,7 @@
         <bundle>mvn:org.hsqldb/hsqldb/2.7.1</bundle>
     </feature>
 
-    <feature name="jdbc-hsqldb" version="2.6.0" description="HSQLDB 2.7 JDBC Driver" install="false">
+    <feature name="jdbc-hsqldb" version="2.7.1" description="HSQLDB 2.7 JDBC Driver" install="false">
         <feature>jdbc-hsqldb_2_7</feature>
     </feature>
 
