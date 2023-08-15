@@ -25,7 +25,7 @@
     xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
 
     <feature name="apache-commons-beanutils" version="1.9.4" description="Apache Commons Bean Utils" install="false">
-        <feature dependency="true">apache-commons-collections</feature>
+        <feature>apache-commons-collections</feature>
         <bundle>mvn:commons-beanutils/commons-beanutils/1.9.4</bundle>
     </feature>
 
@@ -50,25 +50,25 @@
     </feature>
     
     <feature name="apache-commons-dbcp2" version="2.9.0" description="Apache Commons DBCP2" install="false">
-        <feature dependency="true">transaction-api</feature>
+        <feature>transaction-api</feature>
         <feature>apache-commons-pool2</feature>
         <bundle>mvn:org.apache.commons/commons-dbcp2/2.9.0</bundle>
     </feature>
     
     <feature name="apache-commons-codec" version="1.15" description="Apache Commons Codec" install="false">
-        <feature dependency="true">apache-commons-logging</feature>
+        <feature>apache-commons-logging</feature>
         <bundle>mvn:commons-codec/commons-codec/1.15</bundle>
     </feature>
     
     <feature name="apache-commons-fileupload" version="1.4" description="Apache Commons Fileupload" install="false">
-        <feature dependency="true">http</feature>
-        <feature dependency="true">apache-commons-logging</feature>
+        <feature>http</feature>
+        <feature>apache-commons-logging</feature>
         <feature>apache-commons-io</feature>
         <bundle>mvn:commons-fileupload/commons-fileupload/1.4</bundle>
     </feature>
     
     <feature name="apache-commons-lang" version="2.6" description="Apache Commons Lang" install="false">
-        <feature dependency="true">apache-commons-logging</feature>
+        <feature>apache-commons-logging</feature>
         <bundle>mvn:commons-lang/commons-lang/2.6</bundle>
     </feature>
     
@@ -77,14 +77,14 @@
     </feature>
     
     <feature name="apache-commons-configuration" version="1.10" description="Apache Commons Configuration" install="false">
-        <feature dependency="true">apache-commons-lang</feature>
+        <feature>apache-commons-lang</feature>
         <bundle>mvn:commons-configuration/commons-configuration/1.10</bundle>
     </feature>
 
     <feature name="apache-commons-configuration2" version="2.8.0" description="Apache Commons Configuration2" install="false">
-        <feature dependency="true">apache-commons-lang3</feature>
-        <feature dependency="true">apache-commons-logging</feature>
-        <feature dependency="true">apache-commons-text</feature>
+        <feature>apache-commons-lang3</feature>
+        <feature>apache-commons-logging</feature>
+        <feature>apache-commons-text</feature>
         <bundle>mvn:org.apache.commons/commons-configuration2/2.8.0</bundle>
     </feature>
 
@@ -130,7 +130,7 @@
 
 
     <feature name="apache-commons-text" version="" description="Apache Commons text" install="false">
-        <feature dependency="true">apache-commons-lang3</feature>
+        <feature>apache-commons-lang3</feature>
         <bundle>mvn:org.apache.commons/commons-text/1.10.0</bundle>
     </feature>
 

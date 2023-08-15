@@ -35,11 +35,11 @@
 
 
     <feature name="eclipse-xtext-2_29" version="2.29.0" description="Eclipse XText runtime" install="false">
-        <feature dependency="true">eclipse-compatibility</feature>
-        <feature dependency="true">eclipse-emf</feature>
-        <feature dependency="true">guava-27</feature>
-        <feature dependency="true">guice-5</feature>
-        <feature dependency="true">antlr3</feature>
+        <feature>eclipse-compatibility</feature>
+        <feature>eclipse-emf</feature>
+        <feature>guava-30</feature>
+        <feature>guice-5</feature>
+        <feature>antlr3</feature>
         <feature dependency="true">pax-cdi-core</feature>
         <bundle>mvn:org.ow2.asm/asm/9.4</bundle>
         <bundle>mvn:io.github.classgraph/classgraph/4.8.43</bundle>

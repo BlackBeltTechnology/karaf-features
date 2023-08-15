@@ -29,16 +29,16 @@
     </feature>
 
     <feature name="eclipse-epsilon-2" version="2.4.0" description="Eclipse Epsilon" install="false">
-        <feature dependency="true">guava-27</feature>
-        <feature dependency="true">antlr3</feature>
-        <feature dependency="true">apache-commons-collections</feature>
-        <feature dependency="true">apache-commons-csv</feature>
-        <feature dependency="true">apache-commons-lang3</feature>
-        <feature dependency="true">apache-commons-math3</feature>
-        <feature dependency="true">apache-poi4</feature>
-        <feature dependency="true">stringtemplate3</feature>
-        <feature dependency="true">eclipse-emf</feature>
-        <feature dependency="true">jackson-jaxrs</feature>
+        <feature>guava-30</feature>
+        <feature>antlr3</feature>
+        <feature>apache-commons-collections</feature>
+        <feature>apache-commons-csv</feature>
+        <feature>apache-commons-lang3</feature>
+        <feature>apache-commons-math3</feature>
+        <feature>apache-poi4</feature>
+        <feature>stringtemplate3</feature>
+        <feature>eclipse-emf</feature>
+        <feature>jackson-jaxrs</feature>
         <bundle>mvn:hu.blackbelt.bundles.eclipse-epsilon/org.eclipse.epsilon/2.4.0_1</bundle>
     </feature>
 

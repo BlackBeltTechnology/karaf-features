@@ -25,34 +25,34 @@
     xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
 
     <feature name="apache-poi3" version="3.17" description="Apache POI 3" install="false">
-        <feature dependency="true">bouncycastle</feature>
-        <feature dependency="true">apache-xmlbeans2</feature>
-        <feature dependency="true">apache-commons-codec</feature>
-        <feature dependency="true">apache-commons-collections4</feature>
+        <feature>bouncycastle</feature>
+        <feature>apache-xmlbeans2</feature>
+        <feature>apache-commons-codec</feature>
+        <feature>apache-commons-collections4</feature>
         <bundle>mvn:hu.blackbelt.bundles.poi/org.apache.poi/3.17_2</bundle>
     </feature>
 
     <feature name="apache-poi4" version="4.1.2" description="Apache POI 4" install="false">
-        <feature dependency="true">bouncycastle</feature>
-        <feature dependency="true">apache-xmlbeans3</feature>
-        <feature dependency="true">apache-commons-codec</feature>
-        <feature dependency="true">apache-commons-collections4</feature>
-        <feature dependency="true">apache-commons-compress</feature>
-        <feature dependency="true">apache-commons-math3</feature>
-        <feature dependency="true">apache-commons-bcel</feature>
-        <feature dependency="true">apache-commons-io</feature>
+        <feature>bouncycastle</feature>
+        <feature>apache-xmlbeans3</feature>
+        <feature>apache-commons-codec</feature>
+        <feature>apache-commons-collections4</feature>
+        <feature>apache-commons-compress</feature>
+        <feature>apache-commons-math3</feature>
+        <feature>apache-commons-bcel</feature>
+        <feature>apache-commons-io</feature>
         <bundle>mvn:hu.blackbelt.bundles.poi/org.apache.poi/4.1.2_3</bundle>
     </feature>
 
     <feature name="apache-poi5" version="5.2.3" description="Apache POI 5" install="false">
-        <feature dependency="true">bouncycastle</feature>
-        <feature dependency="true">apache-xmlbeans5</feature>
-        <feature dependency="true">apache-commons-codec</feature>
-        <feature dependency="true">apache-commons-collections4</feature>
-        <feature dependency="true">apache-commons-compress</feature>
-        <feature dependency="true">apache-commons-math3</feature>
-        <feature dependency="true">apache-commons-bcel</feature>
-        <feature dependency="true">apache-commons-io</feature>
+        <feature>bouncycastle</feature>
+        <feature>apache-xmlbeans5</feature>
+        <feature>apache-commons-codec</feature>
+        <feature>apache-commons-collections4</feature>
+        <feature>apache-commons-compress</feature>
+        <feature>apache-commons-math3</feature>
+        <feature>apache-commons-bcel</feature>
+        <feature>apache-commons-io</feature>
 
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xalan/2.7.2_3</bundle>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.batik/1.16_1</bundle>
