@@ -126,12 +126,20 @@
         <bundle>mvn:com.google.inject/guice/5.1.0</bundle>
         <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.15.0</bundle>
         <bundle>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
-
     </feature>
 
-    <feature name="guice" version="4.2.3" description="Google Guice" install="false">
+    <feature name="guice-7" version="7.0.1" description="Google Guice" install="false">
+        <feature>guava-31</feature>
+        <bundle>mvn:jakarta.inject/jakarta.inject-api/2.0.1</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.aopalliance/1.0_6</bundle>
+        <bundle>mvn:com.google.inject/guice/7.0.0</bundle>
+        <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.15.0</bundle>
+        <bundle>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
+    </feature>
+
+    <feature name="guice" version="5.1.0" description="Google Guice" install="false">
         <feature>guava-30</feature>
-        <feature>guice-4</feature>
+        <feature>guice-5</feature>
     </feature>
 
 
@@ -140,9 +148,17 @@
     </feature>
     
     <feature name="google-api-client" version="1.23.0" description="Google client API" install="false">
-        <feature>jackson-jaxrs</feature>
+        <bundle start-level="10" dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxrs-api-2.1/2.9.1</bundle>
+        <bundle start-level="10" dependency="true">mvn:jakarta.annotation/jakarta.annotation-api/1.3.5</bundle>
+        <bundle start-level="35">mvn:org.yaml/snakeyaml/2.1</bundle>
+        <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-core/${jackson-version}</bundle>
+        <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson-version}</bundle>
+        <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-databind/${jackson-version}</bundle>
+        <bundle start-level="35">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/${jackson-version}</bundle>
+        <bundle start-level="35">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/${jackson-version}</bundle>
         <feature>apache-httpclient4</feature>
-        <feature>guava</feature>
+        <feature>guava-20</feature>
+        <feature>guava-30</feature>
         <feature>gson</feature>
         <bundle>mvn:hu.blackbelt.bundles.google-api-client/com.google.api-client/1.23.0_2</bundle>
     </feature>
@@ -158,7 +174,7 @@
     </feature>
     
     <feature name="google-gdata" version="1.47.1.1" description="Google GData" install="false">
-        <feature>guava</feature>
+        <feature>guava-20</feature>
         <feature>google-api-client</feature>
         <feature>apache-httpclient4</feature>
         <feature>google-api-services-oauth2</feature>

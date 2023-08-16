@@ -29,6 +29,15 @@
     </feature>
 
     <feature name="eclipse-epsilon-2" version="2.4.0" description="Eclipse Epsilon" install="false">
+        <bundle start-level="10" dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxrs-api-2.1/2.9.1</bundle>
+        <bundle start-level="10" dependency="true">mvn:jakarta.annotation/jakarta.annotation-api/1.3.5</bundle>
+        <bundle start-level="35">mvn:org.yaml/snakeyaml/2.1</bundle>
+        <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-core/${jackson-version}</bundle>
+        <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson-version}</bundle>
+        <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-databind/${jackson-version}</bundle>
+        <bundle start-level="35">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/${jackson-version}</bundle>
+        <bundle start-level="35">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/${jackson-version}</bundle>
+        <feature>guava-20</feature>
         <feature>guava-30</feature>
         <feature>antlr3</feature>
         <feature>apache-commons-collections</feature>
@@ -38,8 +47,7 @@
         <feature>apache-poi4</feature>
         <feature>stringtemplate3</feature>
         <feature>eclipse-emf</feature>
-        <feature>jackson-jaxrs</feature>
-        <bundle>mvn:hu.blackbelt.bundles.eclipse-epsilon/org.eclipse.epsilon/2.4.0_1</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.eclipse-epsilon/org.eclipse.epsilon/2.4.0_3</bundle>
     </feature>
 
 </features>

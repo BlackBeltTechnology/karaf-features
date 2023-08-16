@@ -131,6 +131,7 @@
                                         <feature>guice-3</feature>
                                         <feature>guice-4</feature>
                                         <feature>guice-5</feature>
+                                        <feature>guice-7</feature>
                                         <feature>gson</feature>
                                         <feature>google-api-client</feature>
                                         <feature>google-api-services-oauth2</feature>

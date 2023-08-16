@@ -43,8 +43,8 @@
         <feature dependency="true">pax-cdi-core</feature>
         <bundle>mvn:org.ow2.asm/asm/9.4</bundle>
         <bundle>mvn:io.github.classgraph/classgraph/4.8.43</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.eclipse-xtext/org.eclipse.xtext/2.29.0_0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.eclipse-xbase/org.eclipse.xbase/2.29.0_0</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.eclipse-xtext/org.eclipse.xtext/2.29.0_1</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.eclipse-xbase/org.eclipse.xbase/2.29.0_1</bundle>
     </feature>
 
 </features>
