@@ -27,7 +27,7 @@
     <feature name="jasperreports" version="6.20.5" description="JasperReports" install="false">
         <feature>jasperreports-commons</feature>
         <feature>jasperreports-jackson</feature>
-        <bundle>mvn:hu.blackbelt.bundles.jasperreports/net.sf.jasperreports/6.20.5_1</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.jasperreports/net.sf.jasperreports/6.20.5_2</bundle>
     </feature>
 
     <feature name="jasperreports-commons" version="${jackson.version}">
