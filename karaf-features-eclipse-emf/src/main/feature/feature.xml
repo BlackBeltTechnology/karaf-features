@@ -24,8 +24,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
 
-    <feature name="eclipse-emf" version="2.34.0" description="Eclipse EMF Ecore" install="false">
-        <feature>eclipse-emf-2.34</feature>
+    <feature name="eclipse-emf" version="2.35.0" description="Eclipse EMF Ecore" install="false">
+        <feature>eclipse-emf-2.35</feature>
     </feature>
 
     <feature name="eclipse-emf-2.12" version="2.12.0" description="Eclipse EMF Ecore 2.12" install="false">
@@ -70,6 +70,14 @@
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.common/2.28.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.34.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.18.0</bundle>
+        <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.12.0</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+    </feature>
+
+    <feature name="eclipse-emf-2.35" version="2.35.0" description="Eclipse EMF Ecore 2.35" install="false">
+        <bundle>mvn:org.eclipse.emf/org.eclipse.emf.common/2.29.0</bundle>
+        <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.35.0</bundle>
+        <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.35.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.12.0</bundle>
         <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
     </feature>
