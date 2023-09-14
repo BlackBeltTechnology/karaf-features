@@ -31,7 +31,7 @@
     <feature name="eclipse-epsilon-2" version="2.4.0" description="Eclipse Epsilon" install="false">
         <bundle start-level="10" dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxrs-api-2.1/2.9.1</bundle>
         <bundle start-level="10" dependency="true">mvn:jakarta.annotation/jakarta.annotation-api/1.3.5</bundle>
-        <bundle start-level="35">mvn:org.yaml/snakeyaml/2.1</bundle>
+        <bundle start-level="35">mvn:org.yaml/snakeyaml/2.2</bundle>
         <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-core/${jackson-version}</bundle>
         <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson-version}</bundle>
         <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-databind/${jackson-version}</bundle>
