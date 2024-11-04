@@ -118,6 +118,7 @@
                                         <feature>eclipse-emf-2.34</feature>
                                         <feature>eclipse-emf-2.35</feature>
                                         <feature>eclipse-emf-2.36</feature>
+                                        <feature>eclipse-emf-2.37</feature>
                                     </features>
                                 </configuration>
                             </execution>
