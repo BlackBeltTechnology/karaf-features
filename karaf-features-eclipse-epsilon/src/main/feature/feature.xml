@@ -47,7 +47,7 @@
         <feature>apache-poi4</feature>
         <feature>stringtemplate3</feature>
         <feature>eclipse-emf</feature>
-        <bundle>mvn:hu.blackbelt.bundles.eclipse-epsilon/org.eclipse.epsilon/2.5.0_1</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.eclipse-epsilon/org.eclipse.epsilon/2.8.0_1</bundle>
     </feature>
 
 </features>
