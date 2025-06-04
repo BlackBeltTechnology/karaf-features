@@ -106,7 +106,7 @@
                                         <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                                     </descriptors>
                                     <distribution>org.apache.karaf.features:framework</distribution>
-                                    <javase>17</javase>
+                                    <javase>21</javase>
                                     <framework>
                                         <feature>framework</feature>
                                         <feature>shell-compat</feature>
@@ -115,6 +115,7 @@
                                         <feature>eclipse-compatibility</feature>
                                         <feature>eclipse-xtext</feature>
                                         <feature>eclipse-xtext-2_29</feature>
+                                        <feature>eclipse-xtext-2_39</feature>
                                     </features>
                                 </configuration>
                             </execution>

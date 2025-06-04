@@ -96,8 +96,8 @@
         <bundle>mvn:org.apache.commons/commons-math/2.2</bundle>
     </feature>
     
-    <feature name="apache-commons-lang3" version="3.12.0" description="Apache Commons Lang3" install="false">
-        <bundle>mvn:org.apache.commons/commons-lang3/3.12.0</bundle>
+    <feature name="apache-commons-lang3" version="3.14.0" description="Apache Commons Lang3" install="false">
+        <bundle>mvn:org.apache.commons/commons-lang3/3.14.0</bundle>
     </feature>
     
     <feature name="apache-commons-csv" version="1.9.0" description="Apache Commons CSV" install="false">
