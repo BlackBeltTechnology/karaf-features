@@ -28,7 +28,7 @@
         <bundle>mvn:com.h2database/h2/1.4.200</bundle>
     </feature>
 
-    <feature name="jdbc-postgresql" version="42.5.1" description="PostgreSQL JDBC Driver" install="false">
+    <feature name="jdbc-postgresql" version="42.7.6" description="PostgreSQL JDBC Driver" install="false">
         <feature prerequisite="true" dependency="true">wrap</feature>
         <feature prerequisite="true" dependency="true">transaction-api</feature>
         <bundle><![CDATA[wrap:mvn:org.postgresql/postgresql/42.5.1$Bundle-Name=Postgresql Driver&Bundle-SymbolicName=org.postgresql&Bundle-Version=42.5.1&Export-Package=org.postgresql.*]]></bundle>
