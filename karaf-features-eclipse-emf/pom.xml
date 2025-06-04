@@ -103,7 +103,7 @@
                                         <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                                     </descriptors>
                                     <distribution>org.apache.karaf.features:framework</distribution>
-                                    <javase>17</javase>
+                                    <javase>21</javase>
                                     <framework>
                                         <feature>framework</feature>
                                         <feature>shell-compat</feature>
@@ -120,6 +120,7 @@
                                         <feature>eclipse-emf-2.36</feature>
                                         <feature>eclipse-emf-2.37</feature>
                                         <feature>eclipse-emf-2.38</feature>
+                                        <feature>eclipse-emf-2.39</feature>
                                     </features>
                                 </configuration>
                             </execution>
