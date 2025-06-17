@@ -111,6 +111,11 @@
         <bundle>mvn:com.google.guava/guava/32.1.2-jre</bundle>
     </feature>
 
+    <feature name="guava-33" version="33.4.8" description="Google Guava 33" install="false">
+        <bundle>mvn:com.google.guava/failureaccess/1.0.3</bundle>
+        <bundle>mvn:com.google.guava/guava/33.4.8-jre</bundle>
+    </feature>
+
     <feature name="guice-4" version="4.2.3" description="Google Guice" install="false">
         <feature>guava-27</feature>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject/1_3</bundle>

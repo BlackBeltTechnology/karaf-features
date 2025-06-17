@@ -127,6 +127,7 @@
                                         <feature>guava-30</feature>
                                         <feature>guava-31</feature>
                                         <feature>guava-32</feature>
+                                        <feature>guava-33</feature>
                                         <feature>guice</feature>
                                         <feature>guice-3</feature>
                                         <feature>guice-4</feature>
