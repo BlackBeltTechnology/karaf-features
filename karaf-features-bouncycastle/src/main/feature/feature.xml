@@ -24,8 +24,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
 
-    <feature name="bouncycastle" version="1.70" description="BouncyCastle" install="false">
-        <feature>bouncycastle-1.70</feature>
+    <feature name="bouncycastle" version="1.78.1" description="BouncyCastle" install="false">
+        <feature>bouncycastle-1.78</feature>
     </feature>
 
     <feature name="bouncycastle-1.69" version="1.69" description="BouncyCastle" install="false">
@@ -40,6 +40,13 @@
         <bundle>mvn:org.bouncycastle/bcmail-jdk15on/1.70</bundle>
         <bundle>mvn:org.bouncycastle/bcpkix-jdk15on/1.70</bundle>
         <bundle>mvn:org.bouncycastle/bcutil-jdk15on/1.70</bundle>
+    </feature>
+
+    <feature name="bouncycastle-1.78" version="1.78.1" description="BouncyCastle" install="false">
+        <bundle>mvn:org.bouncycastle/bcprov-jdk18on/1.78.1</bundle>
+        <bundle>mvn:org.bouncycastle/bcmail-jdk18on/1.78.1</bundle>
+        <bundle>mvn:org.bouncycastle/bcpkix-jdk18on/1.78.1</bundle>
+        <bundle>mvn:org.bouncycastle/bcutil-jdk18on/1.78.1</bundle>
     </feature>
 
 </features>
