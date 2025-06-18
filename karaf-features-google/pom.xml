@@ -101,6 +101,7 @@
                                         <descriptor>mvn:org.apache.karaf.features/enterprise/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/spring/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-httpclient-features/${project.version}/xml/features</descriptor>
+                                        <descriptor>mvn:hu.blackbelt.karaf.features/bouncycastle-features/${project.version}/xml/features</descriptor>
                                         <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                                     </descriptors>
                                     <distribution>org.apache.karaf.features:framework</distribution>
@@ -134,9 +135,19 @@
                                         <feature>guice-5</feature>
                                         <feature>guice-7</feature>
                                         <feature>gson</feature>
+                                        <feature>perfmark</feature>
+                                        <feature>opencensus</feature>
                                         <feature>google-api-client</feature>
-                                        <feature>google-api-services-oauth2</feature>
-                                        <feature>google-api-services-calendar</feature>
+                                        <feature>google-auth</feature>
+                                        <feature>google-http-client</feature>
+                                        <feature>google-api-grpc</feature>
+                                        <feature>opentelemetry</feature>
+                                        <feature>google-api-extension</feature>
+                                        <feature>google-api-ads</feature>
+<!--                                        <feature>google-api-grpc</feature>-->
+<!--                                        <feature>google-api-client</feature>-->
+<!--                                        <feature>google-api-services-oauth2</feature>-->
+<!--                                        <feature>google-api-services-calendar</feature>-->
                                         <feature>google-gdata</feature>
                                     </features>
                                 </configuration>
@@ -188,6 +199,14 @@
                 <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
                     <artifactId>apache-httpclient-features</artifactId>
+                    <classifier>features</classifier>
+                    <type>xml</type>
+                    <scope>runtime</scope>
+                    <version>${project.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>hu.blackbelt.karaf.features</groupId>
+                    <artifactId>bouncycastle-features</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
                     <scope>runtime</scope>
