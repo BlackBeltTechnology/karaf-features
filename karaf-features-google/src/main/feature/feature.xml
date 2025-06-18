@@ -164,7 +164,21 @@
     </feature>
 
     <feature name="opentelemetry" version="1.51.0" description="Opentelemetry" install="false">
-        <bundle>mvn:hu.blackbelt.bundles.opentelemetry/io.opentelemetry/1.51.0_0</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.opentelemetry/io.opentelemetry/1.51.0_1</bundle>
+    </feature>
+
+    <feature name="netty-client" version="4.1.111.Final">
+        <feature>bouncycastle</feature>
+        <bundle start-level="40">mvn:io.netty/netty-tcnative-classes/2.0.46.Final</bundle>
+        <bundle start-level="40">mvn:io.netty/netty-common/4.1.111.Final</bundle>
+        <bundle start-level="40">mvn:io.netty/netty-transport-native-unix-common/4.1.111.Final</bundle>
+        <bundle start-level="40">mvn:io.netty/netty-handler/4.1.111.Final</bundle>
+        <bundle start-level="40">mvn:io.netty/netty-buffer/4.1.111.Final</bundle>
+        <bundle start-level="40">mvn:io.netty/netty-transport/4.1.111.Final</bundle>
+        <bundle start-level="40">mvn:io.netty/netty-resolver/4.1.111.Final</bundle>
+        <bundle start-level="40">mvn:io.netty/netty-codec/4.1.111.Final</bundle>
+        <bundle start-level="40">mvn:io.netty/netty-codec-http/4.1.111.Final</bundle>
+        <bundle start-level="40">mvn:io.netty/netty-codec-http2/4.1.111.Final</bundle>
     </feature>
 
     <feature name="google-http-client" version="1.47.0" description="Google HTTP client" install="false">
@@ -195,27 +209,28 @@
         <feature>google-api-client</feature>
         <feature>google-api-grpc</feature>
         <feature>opentelemetry</feature>
-        <bundle>mvn:hu.blackbelt.bundles.google-api-extension/com.google.api-extension/2.66.0_0</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-extension/com.google.api-extension/2.66.0_1</bundle>
     </feature>
 
     <feature name="google-api-grpc" version="1.70.0" description="Google RPC API" install="false">
         <feature>google-auth</feature>
         <feature>perfmark</feature>
         <feature>bouncycastle</feature>
+        <feature>netty-client</feature>
 
         <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.37.0</bundle>
         <feature>guava-32</feature>
         <bundle start-level="35">mvn:com.google.protobuf/protobuf-java/3.25.8</bundle>
         <bundle start-level="35">mvn:com.google.protobuf/protobuf-java-util/3.25.8</bundle>
         <bundle start-level="35">mvn:com.google.protobuf.nano/protobuf-javanano/3.1.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.google-api-grpc/com.google.api-grpc/1.70.0_1</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-grpc/com.google.api-grpc/1.70.0_2</bundle>
     </feature>
 
     <feature name="google-api-ads" version="38.8.0" description="Google Ads API" install="false">
         <feature>google-api-client</feature>
         <feature>google-api-grpc</feature>
         <feature>google-api-extension</feature>
-        <bundle>mvn:hu.blackbelt.bundles.google-api-ads/com.google.api-ads/38.0.0_0</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-ads/com.google.api-ads/38.0.0_1</bundle>
     </feature>
 
     <feature name="google-gdata" version="1.47.1.1" description="Google GData" install="false">
