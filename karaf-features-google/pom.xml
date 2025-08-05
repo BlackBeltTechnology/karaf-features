@@ -149,6 +149,7 @@
                                         <feature>google-api-ads</feature>
                                         <feature>google-api-gcloud</feature>
                                         <feature>google-api-bigquery</feature>
+                                        <feature>google-flatbuffers</feature>
 <!--                                        <feature>google-api-grpc</feature>-->
 <!--                                        <feature>google-api-client</feature>-->
 <!--                                        <feature>google-api-services-oauth2</feature>-->
