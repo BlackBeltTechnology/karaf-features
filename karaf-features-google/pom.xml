@@ -114,8 +114,9 @@
                                     </framework>
                                     <features>
                                         <feature>jimfs</feature>
-                                        <feature>jimfs1.1</feature>
-                                        <feature>jimfs1.2</feature>
+                                        <feature>jimfs-1.1</feature>
+                                        <feature>jimfs-1.2</feature>
+                                        <feature>jimfs-1.3</feature>
                                         <feature>guava</feature>
                                         <feature>guava-20</feature>
                                         <feature>guava-21</feature>
@@ -139,6 +140,15 @@
                                         <feature>gson</feature>
                                         <feature>perfmark</feature>
                                         <feature>opencensus</feature>
+                                        <feature>threeten</feature>
+                                        <feature>brotli4j</feature>
+                                        <feature>jzlib</feature>
+                                        <feature>lzma-java</feature>
+                                        <feature>lz4-java</feature>
+                                        <feature>re2j</feature>
+                                        <feature>google-protobuf-3</feature>
+                                        <feature>google-protobuf-4</feature>
+                                        <feature>google-appengine</feature>
                                         <feature>google-api-client</feature>
                                         <feature>google-auth</feature>
                                         <feature>google-http-client</feature>
