@@ -24,8 +24,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.5.0 http://karaf.apache.org/xmlns/features/v1.5.0">
 
-    <feature name="jimfs" version="1.2" description="Google JimFS 1.2" install="false">
-        <feature>jimfs-1.2</feature>
+    <feature name="jimfs" version="1.3" description="Google JimFS 1.3" install="false">
+        <feature>jimfs-1.3</feature>
     </feature>
 
 
@@ -39,6 +39,13 @@
         <bundle>mvn:com.ibm.icu/icu4j/72.1</bundle>
         <feature>guava-30</feature>
         <bundle>mvn:com.google.jimfs/jimfs/1.2</bundle>
+    </feature>
+
+    <feature name="jimfs-1.3" version="1.3" description="Google JimFS 1.3" install="false">
+        <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
+        <bundle>mvn:com.ibm.icu/icu4j/72.1</bundle>
+        <feature>guava-33</feature>
+        <bundle>mvn:com.google.jimfs/jimfs/1.3.1</bundle>
     </feature>
 
     <feature name="guava" version="20.0" description="Google Guava 20" install="false">
@@ -124,13 +131,17 @@
         <bundle>mvn:com.google.inject/guice/4.2.3</bundle>
     </feature>
 
+    <feature name="jsr305" version="3.0.2" description="FindBugs (JSR-305)" install="false">
+        <bundle>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
+    </feature>
+
     <feature name="guice-5" version="5.1.0" description="Google Guice" install="false">
         <feature>guava-30</feature>
+        <feature>jsr305</feature>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject/1_3</bundle>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.aopalliance/1.0_6</bundle>
         <bundle>mvn:com.google.inject/guice/5.1.0</bundle>
-        <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.37.0</bundle>
-        <bundle>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
+        <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
     </feature>
 
     <feature name="guice-7" version="7.0.1" description="Google Guice" install="false">
@@ -138,8 +149,8 @@
         <bundle>mvn:jakarta.inject/jakarta.inject-api/2.0.1</bundle>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.aopalliance/1.0_6</bundle>
         <bundle>mvn:com.google.inject/guice/7.0.0</bundle>
-        <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.37.0</bundle>
-        <bundle>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
+        <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
+        <feature>jsr305</feature>
     </feature>
 
     <feature name="guice" version="5.1.0" description="Google Guice" install="false">
@@ -147,24 +158,47 @@
         <feature>guice-5</feature>
     </feature>
 
-
     <feature name="gson" version="2.13.1" description="Gson" install="false">
         <bundle>mvn:com.google.code.gson/gson/2.13.1</bundle>
     </feature>
 
     <feature name="opencensus" version="0.31.1" description="Opencensus" install="false">
         <feature>guava-33</feature>
-        <bundle>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.opencensus/io.opencensus/0.31.1_0</bundle>
+        <feature>jsr305</feature>
+        <bundle>mvn:hu.blackbelt.bundles.opencensus/io.opencensus/0.31.1_1</bundle>
     </feature>
 
     <feature name="perfmark" version="0.27.0" description="Perfmark" install="false">
-        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.37.0</bundle>
+        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
         <bundle>mvn:hu.blackbelt.bundles.perfmark/io.perfmark/0.27.0_0</bundle>
+    </feature>
+
+    <feature name="threeten" version="1.7.1" description="ThreeTen" install="false">
+        <bundle>mvn:hu.blackbelt.bundles.threeten/org.threeten/1.7.1_1</bundle>
+    </feature>
+
+    <feature name="brotli4j" version="1.18.0" description="Brotli4j" install="false">
+        <bundle>mvn:hu.blackbelt.bundles.brotli4j/com.aayushatharva.brotli4j/1.18.0_1</bundle>
+    </feature>
+
+    <feature name="jzlib" version="1.1.3" description="JZLib" install="false">
+        <bundle>mvn:hu.blackbelt.bundles.jzlib/com.jcraft.jzlib/1.1.3_1</bundle>
+    </feature>
+
+    <feature name="lzma-java" version="1.3" description="LZMA Java" install="false">
+        <bundle>mvn:hu.blackbelt.bundles.lzma-java/com.github.jponge.lzma-java/1.3_1</bundle>
+    </feature>
+
+    <feature name="lz4-java" version="1.8.0" description="LZ Java" install="false">
+        <bundle>mvn:hu.blackbelt.bundles.lz4-java/org.lz4.lz4-java/1.8.0_1</bundle>
     </feature>
 
     <feature name="opentelemetry" version="1.51.0" description="Opentelemetry" install="false">
         <bundle>mvn:hu.blackbelt.bundles.opentelemetry/io.opentelemetry/1.51.0_1</bundle>
+    </feature>
+
+    <feature name="re2j" version="1.8" description="Re2j" install="false">
+        <bundle>mvn:hu.blackbelt.bundles.re2j/com.google.re2j/1.8_1</bundle>
     </feature>
 
     <feature name="netty-client" version="4.1.111.Final">
@@ -192,7 +226,7 @@
         <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-databind/${jackson-version}</bundle>
         <bundle start-level="35">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/${jackson-version}</bundle>
         <bundle start-level="35">mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/${jackson-version}</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.google-http-client/com.google.http-client/1.47.0_1</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.google-http-client/com.google.http-client/1.47.0_2</bundle>
     </feature>
 
     <feature name="google-auth" version="1.36.0" description="Google Auth API" install="false">
@@ -202,14 +236,34 @@
 
     <feature name="google-api-client" version="2.8.0" description="Google client API" install="false">
         <feature>google-auth</feature>
-        <bundle>mvn:hu.blackbelt.bundles.google-api-client/com.google.api-client/2.8.0_1</bundle>
+        <feature>google-protobuf-3</feature>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-client/com.google.api-client/2.8.0_2</bundle>
     </feature>
 
     <feature name="google-api-extension" version="2.66.0" description="Google API Extension" install="false">
+        <feature>threeten</feature>
         <feature>google-api-client</feature>
         <feature>google-api-grpc</feature>
+        <feature>google-protobuf-3</feature>
         <feature>opentelemetry</feature>
-        <bundle>mvn:hu.blackbelt.bundles.google-api-extension/com.google.api-extension/2.66.0_1</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-extension/com.google.api-extension/2.66.0_3</bundle>
+    </feature>
+
+    <feature name="google-protobuf-4" version="4.31.1" description="Google Protobuf 4" install="false">
+        <feature>guava-32</feature>
+        <feature>gson</feature>
+        <feature>jsr305</feature>
+        <bundle start-level="35">mvn:com.google.protobuf/protobuf-java/4.31.1</bundle>
+        <bundle start-level="35">mvn:com.google.protobuf/protobuf-java-util/4.31.1</bundle>
+    </feature>
+
+    <feature name="google-protobuf-3" version="3.25.8" description="Google Protobuf 3" install="false">
+        <feature>guava-32</feature>
+        <feature>gson</feature>
+        <feature>jsr305</feature>
+        <bundle start-level="35">mvn:com.google.protobuf/protobuf-java/3.25.8</bundle>
+        <bundle start-level="35">mvn:com.google.protobuf/protobuf-java-util/3.25.8</bundle>
+        <bundle start-level="35">mvn:com.google.protobuf.nano/protobuf-javanano/3.1.0</bundle>
     </feature>
 
     <feature name="google-api-grpc" version="1.70.0" description="Google RPC API" install="false">
@@ -217,20 +271,57 @@
         <feature>perfmark</feature>
         <feature>bouncycastle</feature>
         <feature>netty-client</feature>
-
-        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.37.0</bundle>
+        <feature>google-protobuf-3</feature>
+        <feature>brotli4j</feature>
+        <feature>jzlib</feature>
+        <feature>lz4-java</feature>
+        <bundle>mvn:com.ning/compress-lzf/1.1.2</bundle>
+        <feature>lzma-java</feature>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.conscrypt-openjdk/2.5.2_1</bundle>
+        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
         <feature>guava-32</feature>
-        <bundle start-level="35">mvn:com.google.protobuf/protobuf-java/3.25.8</bundle>
-        <bundle start-level="35">mvn:com.google.protobuf/protobuf-java-util/3.25.8</bundle>
-        <bundle start-level="35">mvn:com.google.protobuf.nano/protobuf-javanano/3.1.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.google-api-grpc/com.google.api-grpc/1.70.0_2</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-grpc/com.google.api-grpc/1.70.0_4</bundle>
     </feature>
 
     <feature name="google-api-ads" version="38.8.0" description="Google Ads API" install="false">
         <feature>google-api-client</feature>
         <feature>google-api-grpc</feature>
         <feature>google-api-extension</feature>
-        <bundle>mvn:hu.blackbelt.bundles.google-api-ads/com.google.api-ads/38.0.0_1</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-ads/com.google.api-ads/38.0.0_2</bundle>
+    </feature>
+
+    <feature name="google-api-gcloud" version="2.58.2" description="Google Cloud API" install="false">
+        <feature>threeten</feature>
+        <feature>google-api-client</feature>
+        <feature>google-api-grpc</feature>
+        <feature>google-http-client</feature>
+        <feature>google-api-extension</feature>
+        <feature>google-api-grpc</feature>
+<!--        <feature>google-protobuf-4</feature>-->
+        <bundle>mvn:hu.blackbelt.bundles.google-api-gcloud/com.google.api-gcloud/2.58.2_2</bundle>
+    </feature>
+
+    <feature name="google-appengine" version="2.0.38" description="Google AppEngine API" install="false">
+        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject/1_3</bundle>
+        <bundle>mvn:jakarta.inject/jakarta.inject-api/2.0.1</bundle>
+        <bundle>mvn:com.sun.mail/javax.mail/1.6.2</bundle>
+        <feature>re2j</feature>
+        <feature>google-api-client</feature>
+        <feature>google-api-grpc</feature>
+        <feature>google-auth</feature>
+        <bundle>mvn:hu.blackbelt.bundles.google-appengine/com.google.appengine/2.0.38_1</bundle>
+    </feature>
+
+    <feature name="google-api-bigquery" version="2.54.0" description="Google BigQuery API" install="false">
+        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
+        <feature>threeten</feature>
+        <feature>apache-arrow</feature>
+        <feature>google-api-client</feature>
+        <feature>google-api-grpc</feature>
+        <feature>google-api-extension</feature>
+        <feature>google-api-gcloud</feature>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-bigquery/com.google.api-bigquery/2.54.0_2</bundle>
     </feature>
 
     <feature name="google-gdata" version="1.47.1.1" description="Google GData" install="false">
@@ -239,4 +330,9 @@
         <feature>apache-httpclient4</feature>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.gdata/1.47.1_1</bundle>
     </feature>
+
+    <feature name="google-flatbuffers" version="25.2.10" description="Google Flatbuffers" install="false">
+        <bundle>mvn:com.google.flatbuffers/flatbuffers-java/24.12.23</bundle>
+    </feature>
+
 </features>
