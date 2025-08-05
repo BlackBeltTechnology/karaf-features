@@ -8,10 +8,13 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>google-features</artifactId>
+    <artifactId>apache-arrow-features</artifactId>
     <packaging>feature</packaging>
-    <name>Google karaf features</name>
+    <name>Apache Arrow Karaf features</name>
 
+    <properties>
+        <jackson-version>2.17.2</jackson-version>
+    </properties>
     <build>
         <resources>
             <resource>
@@ -34,6 +37,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.karaf.tooling</groupId>
                 <artifactId>karaf-maven-plugin</artifactId>
@@ -69,7 +73,7 @@
             </plugin>
         </plugins>
     </build>
-
+    
     <profiles>
         <profile>
             <id>verify-feature</id>
@@ -97,13 +101,9 @@
                                     <descriptors>
                                         <descriptor>mvn:org.apache.karaf.features/framework/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/standard/${karaf-version}/xml/features</descriptor>
-                                        <descriptor>mvn:org.apache.karaf.features/specs/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/enterprise/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/spring/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-commons-features/${project.version}/xml/features</descriptor>
-                                        <descriptor>mvn:hu.blackbelt.karaf.features/apache-httpclient-features/${project.version}/xml/features</descriptor>
-                                        <descriptor>mvn:hu.blackbelt.karaf.features/apache-arrow-features/${project.version}/xml/features</descriptor>
-                                        <descriptor>mvn:hu.blackbelt.karaf.features/bouncycastle-features/${project.version}/xml/features</descriptor>
                                         <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                                     </descriptors>
                                     <distribution>org.apache.karaf.features:framework</distribution>
@@ -113,48 +113,7 @@
                                         <feature>shell-compat</feature>
                                     </framework>
                                     <features>
-                                        <feature>jimfs</feature>
-                                        <feature>jimfs1.1</feature>
-                                        <feature>jimfs1.2</feature>
-                                        <feature>guava</feature>
-                                        <feature>guava-20</feature>
-                                        <feature>guava-21</feature>
-                                        <feature>guava-22</feature>
-                                        <feature>guava-23</feature>
-                                        <feature>guava-24</feature>
-                                        <feature>guava-25</feature>
-                                        <feature>guava-26</feature>
-                                        <feature>guava-27</feature>
-                                        <feature>guava-28</feature>
-                                        <feature>guava-29</feature>
-                                        <feature>guava-30</feature>
-                                        <feature>guava-31</feature>
-                                        <feature>guava-32</feature>
-                                        <feature>guava-33</feature>
-                                        <feature>guice</feature>
-                                        <feature>guice-3</feature>
-                                        <feature>guice-4</feature>
-                                        <feature>guice-5</feature>
-                                        <feature>guice-7</feature>
-                                        <feature>gson</feature>
-                                        <feature>perfmark</feature>
-                                        <feature>opencensus</feature>
-                                        <feature>google-api-client</feature>
-                                        <feature>google-auth</feature>
-                                        <feature>google-http-client</feature>
-                                        <feature>google-flatbuffers</feature>
-                                        <feature>google-api-grpc</feature>
-                                        <feature>opentelemetry</feature>
-                                        <feature>google-api-extension</feature>
-                                        <feature>google-api-ads</feature>
-                                        <feature>google-api-gcloud</feature>
-                                        <feature>google-api-bigquery</feature>
-                                        <feature>google-flatbuffers</feature>
-<!--                                        <feature>google-api-grpc</feature>-->
-<!--                                        <feature>google-api-client</feature>-->
-<!--                                        <feature>google-api-services-oauth2</feature>-->
-<!--                                        <feature>google-api-services-calendar</feature>-->
-                                        <feature>google-gdata</feature>
+                                        <feature>apache-arrow</feature>
                                     </features>
                                 </configuration>
                             </execution>
@@ -180,14 +139,6 @@
                 </dependency>
                 <dependency>
                     <groupId>org.apache.karaf.features</groupId>
-                    <artifactId>specs</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${karaf-version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.apache.karaf.features</groupId>
                     <artifactId>enterprise</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
@@ -204,31 +155,7 @@
                 </dependency>
                 <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
-                    <artifactId>apache-httpclient-features</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${project.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>hu.blackbelt.karaf.features</groupId>
                     <artifactId>apache-commons-features</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${project.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>hu.blackbelt.karaf.features</groupId>
-                    <artifactId>apache-arrow-features</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${project.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>hu.blackbelt.karaf.features</groupId>
-                    <artifactId>bouncycastle-features</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
                     <scope>runtime</scope>

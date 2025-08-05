@@ -129,7 +129,7 @@
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject/1_3</bundle>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.aopalliance/1.0_6</bundle>
         <bundle>mvn:com.google.inject/guice/5.1.0</bundle>
-        <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.37.0</bundle>
+        <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
         <bundle>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
     </feature>
 
@@ -138,7 +138,7 @@
         <bundle>mvn:jakarta.inject/jakarta.inject-api/2.0.1</bundle>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.aopalliance/1.0_6</bundle>
         <bundle>mvn:com.google.inject/guice/7.0.0</bundle>
-        <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.37.0</bundle>
+        <bundle>wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
         <bundle>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
     </feature>
 
@@ -155,11 +155,11 @@
     <feature name="opencensus" version="0.31.1" description="Opencensus" install="false">
         <feature>guava-33</feature>
         <bundle>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.opencensus/io.opencensus/0.31.1_0</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.opencensus/io.opencensus/0.31.1_1</bundle>
     </feature>
 
     <feature name="perfmark" version="0.27.0" description="Perfmark" install="false">
-        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.37.0</bundle>
+        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
         <bundle>mvn:hu.blackbelt.bundles.perfmark/io.perfmark/0.27.0_0</bundle>
     </feature>
 
@@ -209,7 +209,7 @@
         <feature>google-api-client</feature>
         <feature>google-api-grpc</feature>
         <feature>opentelemetry</feature>
-        <bundle>mvn:hu.blackbelt.bundles.google-api-extension/com.google.api-extension/2.66.0_1</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-extension/com.google.api-extension/2.66.0_2</bundle>
     </feature>
 
     <feature name="google-api-grpc" version="1.70.0" description="Google RPC API" install="false">
@@ -218,12 +218,12 @@
         <feature>bouncycastle</feature>
         <feature>netty-client</feature>
 
-        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.37.0</bundle>
+        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
         <feature>guava-32</feature>
         <bundle start-level="35">mvn:com.google.protobuf/protobuf-java/3.25.8</bundle>
         <bundle start-level="35">mvn:com.google.protobuf/protobuf-java-util/3.25.8</bundle>
         <bundle start-level="35">mvn:com.google.protobuf.nano/protobuf-javanano/3.1.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.google-api-grpc/com.google.api-grpc/1.70.0_2</bundle>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-grpc/com.google.api-grpc/1.70.0_3</bundle>
     </feature>
 
     <feature name="google-api-ads" version="38.8.0" description="Google Ads API" install="false">
@@ -233,10 +233,32 @@
         <bundle>mvn:hu.blackbelt.bundles.google-api-ads/com.google.api-ads/38.0.0_1</bundle>
     </feature>
 
+    <feature name="google-api-gcloud" version="2.58.2" description="Google Cloud API" install="false">
+        <feature>google-api-client</feature>
+        <feature>google-api-grpc</feature>
+        <feature>google-api-extension</feature>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-gcloud/com.google.api-gcloud/2.58.2_1</bundle>
+    </feature>
+
+    <feature name="google-api-bigquery" version="2.54.0" description="Google BigQuery API" install="false">
+        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
+        <feature>apache-arrow</feature>
+        <feature>google-api-client</feature>
+        <feature>google-api-grpc</feature>
+        <feature>google-api-extension</feature>
+        <feature>google-api-gcloud</feature>
+        <bundle>mvn:hu.blackbelt.bundles.google-api-bigquery/com.google.api-bigquery/2.54.0_1</bundle>
+    </feature>
+
     <feature name="google-gdata" version="1.47.1.1" description="Google GData" install="false">
         <feature>guava-20</feature>
         <feature>google-api-client</feature>
         <feature>apache-httpclient4</feature>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.gdata/1.47.1_1</bundle>
     </feature>
+
+    <feature name="google-flatbuffers" version="25.2.10" description="Google Flatbuffers" install="false">
+        <bundle>mvn:com.google.flatbuffers/flatbuffers-java/24.12.23</bundle>
+    </feature>
+
 </features>
