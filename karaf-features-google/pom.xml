@@ -113,40 +113,40 @@
                                         <feature>shell-compat</feature>
                                     </framework>
                                     <features>
-<!--                                        <feature>jimfs</feature>-->
-<!--                                        <feature>jimfs1.1</feature>-->
-<!--                                        <feature>jimfs1.2</feature>-->
-<!--                                        <feature>guava</feature>-->
-<!--                                        <feature>guava-20</feature>-->
-<!--                                        <feature>guava-21</feature>-->
-<!--                                        <feature>guava-22</feature>-->
-<!--                                        <feature>guava-23</feature>-->
-<!--                                        <feature>guava-24</feature>-->
-<!--                                        <feature>guava-25</feature>-->
-<!--                                        <feature>guava-26</feature>-->
-<!--                                        <feature>guava-27</feature>-->
-<!--                                        <feature>guava-28</feature>-->
-<!--                                        <feature>guava-29</feature>-->
-<!--                                        <feature>guava-30</feature>-->
-<!--                                        <feature>guava-31</feature>-->
-<!--                                        <feature>guava-32</feature>-->
-<!--                                        <feature>guava-33</feature>-->
-<!--                                        <feature>guice</feature>-->
-<!--                                        <feature>guice-3</feature>-->
-<!--                                        <feature>guice-4</feature>-->
-<!--                                        <feature>guice-5</feature>-->
-<!--                                        <feature>guice-7</feature>-->
-<!--                                        <feature>gson</feature>-->
-<!--                                        <feature>perfmark</feature>-->
-<!--                                        <feature>opencensus</feature>-->
-<!--                                        <feature>google-api-client</feature>-->
-<!--                                        <feature>google-auth</feature>-->
-<!--                                        <feature>google-http-client</feature>-->
+                                        <feature>jimfs</feature>
+                                        <feature>jimfs1.1</feature>
+                                        <feature>jimfs1.2</feature>
+                                        <feature>guava</feature>
+                                        <feature>guava-20</feature>
+                                        <feature>guava-21</feature>
+                                        <feature>guava-22</feature>
+                                        <feature>guava-23</feature>
+                                        <feature>guava-24</feature>
+                                        <feature>guava-25</feature>
+                                        <feature>guava-26</feature>
+                                        <feature>guava-27</feature>
+                                        <feature>guava-28</feature>
+                                        <feature>guava-29</feature>
+                                        <feature>guava-30</feature>
+                                        <feature>guava-31</feature>
+                                        <feature>guava-32</feature>
+                                        <feature>guava-33</feature>
+                                        <feature>guice</feature>
+                                        <feature>guice-3</feature>
+                                        <feature>guice-4</feature>
+                                        <feature>guice-5</feature>
+                                        <feature>guice-7</feature>
+                                        <feature>gson</feature>
+                                        <feature>perfmark</feature>
+                                        <feature>opencensus</feature>
+                                        <feature>google-api-client</feature>
+                                        <feature>google-auth</feature>
+                                        <feature>google-http-client</feature>
                                         <feature>google-flatbuffers</feature>
                                         <feature>google-api-grpc</feature>
-<!--                                        <feature>opentelemetry</feature>-->
+                                        <feature>opentelemetry</feature>
                                         <feature>google-api-extension</feature>
-<!--                                        <feature>google-api-ads</feature>-->
+                                        <feature>google-api-ads</feature>
                                         <feature>google-api-gcloud</feature>
                                         <feature>google-api-bigquery</feature>
 <!--                                        <feature>google-api-grpc</feature>-->
