@@ -89,32 +89,32 @@
     </feature>
 
     <feature name="guava-27" version="27.1" description="Google Guava 27" install="false">
-        <bundle>mvn:com.google.guava/failureaccess/1.0.1</bundle>
+        <bundle>mvn:com.google.guava/failureaccess/1.0.3</bundle>
         <bundle>mvn:com.google.guava/guava/27.1-jre</bundle>
     </feature>
 
     <feature name="guava-28" version="28.2" description="Google Guava 28" install="false">
-        <bundle>mvn:com.google.guava/failureaccess/1.0.1</bundle>
+        <bundle>mvn:com.google.guava/failureaccess/1.0.3</bundle>
         <bundle>mvn:com.google.guava/guava/28.2-jre</bundle>
     </feature>
 
     <feature name="guava-29" version="29.0" description="Google Guava 29" install="false">
-        <bundle>mvn:com.google.guava/failureaccess/1.0.1</bundle>
+        <bundle>mvn:com.google.guava/failureaccess/1.0.3</bundle>
         <bundle>mvn:com.google.guava/guava/29.0-jre</bundle>
     </feature>
 
     <feature name="guava-30" version="30.1.1" description="Google Guava 30" install="false">
-        <bundle>mvn:com.google.guava/failureaccess/1.0.1</bundle>
+        <bundle>mvn:com.google.guava/failureaccess/1.0.3</bundle>
         <bundle>mvn:com.google.guava/guava/30.1.1-jre</bundle>
     </feature>
 
     <feature name="guava-31" version="31.1" description="Google Guava 31" install="false">
-        <bundle>mvn:com.google.guava/failureaccess/1.0.1</bundle>
+        <bundle>mvn:com.google.guava/failureaccess/1.0.3</bundle>
         <bundle>mvn:com.google.guava/guava/31.1-jre</bundle>
     </feature>
 
     <feature name="guava-32" version="32.1.2" description="Google Guava 32" install="false">
-        <bundle>mvn:com.google.guava/failureaccess/1.0.1</bundle>
+        <bundle>mvn:com.google.guava/failureaccess/1.0.3</bundle>
         <bundle>mvn:com.google.guava/guava/32.1.2-jre</bundle>
     </feature>
 
