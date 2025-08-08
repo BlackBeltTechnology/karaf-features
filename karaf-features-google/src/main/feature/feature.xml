@@ -168,39 +168,6 @@
         <bundle>mvn:hu.blackbelt.bundles.opencensus/io.opencensus/0.31.1_1</bundle>
     </feature>
 
-    <feature name="perfmark" version="0.27.0" description="Perfmark" install="false">
-        <bundle start-level="35">wrap:mvn:com.google.errorprone/error_prone_annotations/2.41.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.perfmark/io.perfmark/0.27.0_0</bundle>
-    </feature>
-
-    <feature name="threeten" version="1.7.1" description="ThreeTen" install="false">
-        <bundle>mvn:hu.blackbelt.bundles.threeten/org.threeten/1.7.1_1</bundle>
-    </feature>
-
-    <feature name="brotli4j" version="1.18.0" description="Brotli4j" install="false">
-        <bundle>mvn:hu.blackbelt.bundles.brotli4j/com.aayushatharva.brotli4j/1.18.0_1</bundle>
-    </feature>
-
-    <feature name="jzlib" version="1.1.3" description="JZLib" install="false">
-        <bundle>mvn:hu.blackbelt.bundles.jzlib/com.jcraft.jzlib/1.1.3_1</bundle>
-    </feature>
-
-    <feature name="lzma-java" version="1.3" description="LZMA Java" install="false">
-        <bundle>mvn:hu.blackbelt.bundles.lzma-java/com.github.jponge.lzma-java/1.3_1</bundle>
-    </feature>
-
-    <feature name="lz4-java" version="1.8.0" description="LZ Java" install="false">
-        <bundle>mvn:hu.blackbelt.bundles.lz4-java/org.lz4.lz4-java/1.8.0_1</bundle>
-    </feature>
-
-    <feature name="opentelemetry" version="1.51.0" description="Opentelemetry" install="false">
-        <bundle>mvn:hu.blackbelt.bundles.opentelemetry/io.opentelemetry/1.51.0_1</bundle>
-    </feature>
-
-    <feature name="re2j" version="1.8" description="Re2j" install="false">
-        <bundle>mvn:hu.blackbelt.bundles.re2j/com.google.re2j/1.8_1</bundle>
-    </feature>
-
     <feature name="netty-client" version="4.1.111.Final">
         <feature>bouncycastle</feature>
         <bundle start-level="40">mvn:io.netty/netty-tcnative-classes/2.0.46.Final</bundle>
