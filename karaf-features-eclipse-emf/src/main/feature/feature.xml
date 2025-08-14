@@ -33,21 +33,21 @@
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.12.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.12.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.9.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
     <feature name="eclipse-emf-2.15" version="2.15.0" description="Eclipse EMF Ecore 2.15" install="false">
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.common/2.15.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.15.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.15.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.11.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
     <feature name="eclipse-emf-2.18" version="2.18.0" description="Eclipse EMF Ecore 2.18" install="false">
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.common/2.16.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.18.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.16.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.11.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
 
     <feature name="eclipse-emf-2.21" version="2.21.0" description="Eclipse EMF Ecore 2.21" install="false">
@@ -55,7 +55,7 @@
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.21.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.16.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.11.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
 
     <feature name="eclipse-emf-2.27" version="2.27.0" description="Eclipse EMF Ecore 2.27" install="false">
@@ -63,7 +63,7 @@
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.29.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.17.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.11.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
 
     <feature name="eclipse-emf-2.34" version="2.34.0" description="Eclipse EMF Ecore 2.34" install="false">
@@ -71,7 +71,7 @@
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.34.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.18.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.12.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
 
     <feature name="eclipse-emf-2.35" version="2.35.0" description="Eclipse EMF Ecore 2.35" install="false">
@@ -79,7 +79,7 @@
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.35.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.35.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.12.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
 
 
@@ -88,7 +88,7 @@
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.36.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.37.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.12.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
 
     <feature name="eclipse-emf-2.37" version="2.37.0" description="Eclipse EMF Ecore 2.37" install="false">
@@ -96,7 +96,7 @@
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.37.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.38.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.13.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
 
     <feature name="eclipse-emf-2.38" version="2.38.0" description="Eclipse EMF Ecore 2.38" install="false">
@@ -104,7 +104,7 @@
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.38.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.38.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.13.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
 
     <feature name="eclipse-emf-2.39" version="2.39.0" description="Eclipse EMF Ecore 2.39" install="false">
@@ -112,7 +112,7 @@
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore/2.39.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.39.0</bundle>
         <bundle>mvn:org.eclipse.emf/org.eclipse.emf.mapping.ecore2xml/2.13.0</bundle>
-        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>
+<!--        <bundle>mvn:hu.blackbelt.bundles.uml/org.eclipse.uml2.uml/5.0.0-v20140602-0749_1</bundle>-->
     </feature>
 
 </features>

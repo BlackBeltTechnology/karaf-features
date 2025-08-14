@@ -155,6 +155,7 @@
                 <module>karaf-features-apache-httpclient</module>
                 <module>karaf-features-apache-poi</module>
                 <module>karaf-features-apache-arrow</module>
+                <module>karaf-features-common</module>
                 <module>karaf-features-bouncycastle</module>
                 <module>karaf-features-eclipse-emf</module>
                 <module>karaf-features-eclipse-epsilon</module>

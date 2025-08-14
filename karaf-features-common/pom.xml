@@ -107,6 +107,14 @@
                                         <feature>shell-compat</feature>
                                     </framework>
                                     <features>
+                                        <feature>perfmark</feature>
+                                        <feature>opencensus</feature>
+                                        <feature>threeten</feature>
+                                        <feature>brotli4j</feature>
+                                        <feature>jzlib</feature>
+                                        <feature>lzma-java</feature>
+                                        <feature>lz4-java</feature>
+                                        <feature>re2j</feature>
                                         <feature>common</feature>
                                     </features>
                                 </configuration>

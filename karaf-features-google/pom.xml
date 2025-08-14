@@ -104,6 +104,7 @@
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-httpclient-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-arrow-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/bouncycastle-features/${project.version}/xml/features</descriptor>
+                                        <descriptor>mvn:hu.blackbelt.karaf.features/common-features/${project.version}/xml/features</descriptor>
                                         <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                                     </descriptors>
                                     <distribution>org.apache.karaf.features:framework</distribution>
@@ -138,14 +139,6 @@
                                         <feature>guice-5</feature>
                                         <feature>guice-7</feature>
                                         <feature>gson</feature>
-                                        <feature>perfmark</feature>
-                                        <feature>opencensus</feature>
-                                        <feature>threeten</feature>
-                                        <feature>brotli4j</feature>
-                                        <feature>jzlib</feature>
-                                        <feature>lzma-java</feature>
-                                        <feature>lz4-java</feature>
-                                        <feature>re2j</feature>
                                         <feature>google-protobuf-3</feature>
                                         <feature>google-protobuf-4</feature>
                                         <feature>google-appengine</feature>
@@ -211,6 +204,14 @@
                     <type>xml</type>
                     <scope>runtime</scope>
                     <version>${karaf-version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>hu.blackbelt.karaf.features</groupId>
+                    <artifactId>common-features</artifactId>
+                    <classifier>features</classifier>
+                    <type>xml</type>
+                    <scope>runtime</scope>
+                    <version>${project.version}</version>
                 </dependency>
                 <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
