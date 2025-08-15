@@ -13,8 +13,8 @@
     <name>JasperReports karaf features</name>
 
     <properties>
-        <jackson.version>2.17.2</jackson.version>
-        <jackson.databind.version>2.17.2</jackson.databind.version>
+        <jackson.version>2.19.2</jackson.version>
+        <jackson.databind.version>2.19.2</jackson.databind.version>
         <servicemix.specs.version>2.9.0</servicemix.specs.version>
         <woodstox.stax2-api.version>4.2.1</woodstox.stax2-api.version>
         <specs.jaxws.api.version>2.3_2</specs.jaxws.api.version>
