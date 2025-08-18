@@ -15,7 +15,7 @@
         <deployOnly>false</deployOnly>
         <maven>3.9.4</maven>
         <cxf-version>3.5.5</cxf-version>
-        <jackson-version>2.17.2</jackson-version>
+        <jackson-version>2.19.2</jackson-version>
 
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
@@ -155,6 +155,7 @@
                 <module>karaf-features-apache-httpclient</module>
                 <module>karaf-features-apache-poi</module>
                 <module>karaf-features-apache-arrow</module>
+                <module>karaf-features-common</module>
                 <module>karaf-features-bouncycastle</module>
                 <module>karaf-features-eclipse-emf</module>
                 <module>karaf-features-eclipse-epsilon</module>

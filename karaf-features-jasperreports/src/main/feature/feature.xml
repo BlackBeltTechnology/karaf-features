@@ -36,6 +36,7 @@
         <feature>apache-commons-beanutils</feature>
         <feature>apache-commons-logging</feature>
         <feature>apache-commons-bcel</feature>
+        <feature>guava-30</feature>
         <bundle>mvn:com.ibm.icu/icu4j/73.2</bundle>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xerces/2.12.2_1</bundle>
         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xalan/2.7.2_3</bundle>
