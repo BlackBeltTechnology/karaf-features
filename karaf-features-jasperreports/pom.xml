@@ -13,8 +13,8 @@
     <name>JasperReports karaf features</name>
 
     <properties>
-        <jackson.version>2.17.2</jackson.version>
-        <jackson.databind.version>2.17.2</jackson.databind.version>
+        <jackson.version>2.19.2</jackson.version>
+        <jackson.databind.version>2.19.2</jackson.databind.version>
         <servicemix.specs.version>2.9.0</servicemix.specs.version>
         <woodstox.stax2-api.version>4.2.1</woodstox.stax2-api.version>
         <specs.jaxws.api.version>2.3_2</specs.jaxws.api.version>
@@ -111,6 +111,7 @@
                                         <descriptor>mvn:org.apache.karaf.features/spring/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-commons-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/bouncycastle-features/${project.version}/xml/features</descriptor>
+                                        <descriptor>mvn:hu.blackbelt.karaf.features/google-features/${project.version}/xml/features</descriptor>
                                         <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                                     </descriptors>
                                     <distribution>org.apache.karaf.features:framework</distribution>
@@ -157,6 +158,14 @@
                 <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
                     <artifactId>bouncycastle-features</artifactId>
+                    <classifier>features</classifier>
+                    <type>xml</type>
+                    <scope>runtime</scope>
+                    <version>${project.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>hu.blackbelt.karaf.features</groupId>
+                    <artifactId>google-features</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
                     <scope>runtime</scope>
