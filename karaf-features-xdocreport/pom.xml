@@ -101,8 +101,11 @@
                                         <descriptor>mvn:org.apache.karaf.features/enterprise/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/spring/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-commons-features/${project.version}/xml/features</descriptor>
+                                        <descriptor>mvn:hu.blackbelt.karaf.features/apache-httpclient-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-poi-features/${project.version}/xml/features</descriptor>
+                                        <descriptor>mvn:hu.blackbelt.karaf.features/antlr-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/bouncycastle-features/${project.version}/xml/features</descriptor>
+                                        <descriptor>mvn:hu.blackbelt.karaf.features/jackson-features/${project.version}/xml/features</descriptor>
                                         <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                                     </descriptors>
                                     <distribution>org.apache.karaf.features:framework</distribution>
@@ -112,13 +115,13 @@
                                         <feature>shell-compat</feature>
                                     </framework>
                                     <features>
-                                        <!-- <feature>xdocreport</feature> -->
+                                        <feature>xdocreport-jaxb4</feature>
+                                        <feature>xdocreport-odfdom</feature>
                                         <feature>xdocreport-core</feature>
-                                        <feature>xdocreport-converter-core</feature>
-                                        
-
-                                        <!-- <feature>xdocreport-converter-docx-docx4j</feature> -->
-                                        <!-- <feature>xdocreport-converter-docx-xwpf</feature>
+                                        <feature>xdocreport</feature>
+                                        <feature>xdocreport-core</feature>
+                                        <feature>xdocreport-converter-docx-docx4j</feature>
+                                        <feature>xdocreport-converter-docx-xwpf</feature>
                                         <feature>xdocreport-converter-odt-odfdom</feature>
                                         <feature>xdocreport-document-docx</feature>
                                         <feature>xdocreport-document-odp</feature>
@@ -127,25 +130,21 @@
                                         <feature>xdocreport-document-pptx</feature>
                                         <feature>xdocreport-document-textstyling-wiki</feature>
                                         <feature>xdocreport-template-freemarker</feature>
-                                        <feature>xdocreport-template-velocity</feature>-->
+                                        <feature>xdocreport-template-velocity</feature>
 
-                                        <!-- <feature>xdocreport-converter-pdf-itext5</feature> -->
-<!-- 
+                                        <feature>xdocreport-odfdom-converter-core</feature>
                                         <feature>xdocreport-odfdom-converter-pdf-openpdf</feature>
-                                        <feature>xdocreport-odfdom-converter-pdf</feature>
+<!--                                        <feature>xdocreport-odfdom-converter-pdf</feature>-->
+<!--                                        <feature>xdocreport-converter-pdf-itext5</feature> -->
                                         <feature>xdocreport-odfdom-converter-xhtml</feature>
-                                        <feature>xdocreport-poi-xwpf-converter-core</feature> -->
-
-                                        <!-- <feature>xdocreport-poi-xwpf-converter-pdf-itext5</feature> -->
-<!-- 
+                                        <feature>xdocreport-poi-xwpf-converter-core</feature>
                                         <feature>xdocreport-poi.xwpf-converter-pdf-openpdf</feature>
-                                        <feature>xdocreport-poi-xwpf-converter-pdf</feature>
+<!--                                        <feature>xdocreport-poi-xwpf-converter-pdf</feature>-->
+<!--                                        <feature>xdocreport-poi-xwpf-converter-pdf-itext5</feature>-->
                                         <feature>xdocreport-poi-xwpf-converter-xhtml</feature>
-                                        <feature>xdocreport-openpdf-extension</feature> -->
-
-                                        <!-- <feature>xdocreport-itext-extension</feature>
-                                        <feature>xdocreport-itext5-extension</feature> -->
-
+                                        <feature>xdocreport-openpdf-extension</feature>
+<!--                                        <feature>xdocreport-itext-extension</feature>-->
+<!--                                        <feature>xdocreport-itext5-extension</feature>-->
                                     </features>
                                 </configuration>
                             </execution>
@@ -195,7 +194,31 @@
                 </dependency>
                 <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
+                    <artifactId>apache-httpclient-features</artifactId>
+                    <classifier>features</classifier>
+                    <type>xml</type>
+                    <scope>runtime</scope>
+                    <version>${project.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>hu.blackbelt.karaf.features</groupId>
+                    <artifactId>antlr-features</artifactId>
+                    <classifier>features</classifier>
+                    <type>xml</type>
+                    <scope>runtime</scope>
+                    <version>${project.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>hu.blackbelt.karaf.features</groupId>
                     <artifactId>bouncycastle-features</artifactId>
+                    <classifier>features</classifier>
+                    <type>xml</type>
+                    <scope>runtime</scope>
+                    <version>${project.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>hu.blackbelt.karaf.features</groupId>
+                    <artifactId>jackson-features</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
                     <scope>runtime</scope>

@@ -130,6 +130,10 @@
                                         <feature>apache-commons-csv</feature>
                                         <feature>apache-commons-compress</feature>
                                         <feature>apache-commons-bcel</feature>
+                                        <feature>apache-commons-rdf</feature>
+                                        <feature>apache-commons-digester</feature>
+                                        <feature>apache-commons-digester3</feature>
+                                        <feature>apache-commons-validator</feature>
                                         <feature>apache-xmlbeans2</feature>
                                         <feature>apache-xmlbeans3</feature>
                                         <feature>apache-xmlbeans5</feature>

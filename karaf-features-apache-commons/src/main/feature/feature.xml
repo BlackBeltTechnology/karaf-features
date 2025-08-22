@@ -136,4 +136,27 @@
         <bundle>mvn:org.apache.commons/commons-text/1.13.1</bundle>
     </feature>
 
+    <feature name="apache-commons-rdf" version="0.5.0" description="Apache Commons RDF" install="false">
+        <feature>apache-commons-digester</feature>
+        <bundle>mvn:org.apache.commons/commons-rdf-api/0.5.0</bundle>
+    </feature>
+
+    <feature name="apache-commons-validator" version="1.10.0" description="Apache Commons Validator" install="false">
+        <feature>apache-commons-collections</feature>
+        <feature>apache-commons-logging</feature>
+        <feature>apache-commons-beanutils</feature>
+        <feature>apache-commons-digester</feature>
+        <bundle>mvn:commons-validator/commons-validator/1.10.0</bundle>
+    </feature>
+
+    <feature name="apache-commons-digester" version="2.1" description="Apache Commons Digester" install="false">
+        <feature>apache-commons-beanutils</feature>
+        <bundle>mvn:commons-digester/commons-digester/2.1</bundle>
+    </feature>
+
+    <feature name="apache-commons-digester3" version="3.2" description="Apache Commons Digester3" install="false">
+        <feature>apache-commons-beanutils</feature>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.cglib/3.3.0_1</bundle>
+        <bundle>mvn:org.apache.commons/commons-digester3/3.2</bundle>
+    </feature>
 </features>
