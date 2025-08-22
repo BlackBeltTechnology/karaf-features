@@ -117,7 +117,6 @@
                                     <features>
                                         <feature>xdocreport-jaxb4</feature>
                                         <feature>xdocreport-odfdom</feature>
-                                        <feature>xdocreport-core</feature>
                                         <feature>xdocreport</feature>
                                         <feature>xdocreport-core</feature>
                                         <feature>xdocreport-converter-docx-docx4j</feature>
