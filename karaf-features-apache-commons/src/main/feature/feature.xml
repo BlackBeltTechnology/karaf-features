@@ -127,8 +127,8 @@
         <bundle>mvn:org.apache.commons/commons-jexl3/3.5.0</bundle>
     </feature>
 
-    <feature name="apache-xmlbeans5" version="5.2.0" description="Apache XMLBeans" install="false">
-        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xmlbeans/5.2.0_1</bundle>
+    <feature name="apache-xmlbeans5" version="5.3.0" description="Apache XMLBeans" install="false">
+        <bundle>mvn:hu.blackbelt.bundles.xmlbeans/org.apache.xmlbeans/5.3.0_1</bundle>
     </feature>
 
     <feature name="apache-commons-text" version="1.13.1" description="Apache Commons text" install="false">
