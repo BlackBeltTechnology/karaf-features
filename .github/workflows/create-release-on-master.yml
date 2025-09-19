@@ -38,13 +38,13 @@ jobs:
             [
                 {
                     "id": "judong-nexus-mirror",
-                    "username": "${{ secrets.JUDONG_NEXUS_USERNAME }}",
-                    "password": "${{ secrets.JUDONG_NEXUS_PASSWORD }}"
+                    "username": "${{ secrets.JUDONG_REPOSITORY_USER }}",
+                    "password": "${{ secrets.JUDONG_REPOSITORY_PASSWORD }}"
                 },
                 {
                     "id": "judong-nexus-distribution",
-                    "username": "${{ secrets.JUDONG_NEXUS_USERNAME }}",
-                    "password": "${{ secrets.JUDONG_NEXUS_PASSWORD }}"
+                    "username": "${{ secrets.JUDONG_REPOSITORY_USER }}",
+                    "password": "${{ secrets.JUDONG_REPOSITORY_PASSWORD }}"
                 },
                 {
                     "id": "ossrh",
@@ -57,7 +57,7 @@ jobs:
                 {
                     "id": "judong-nexus-mirror",
                     "mirrorOf": "*",
-                    "url": "https://nexus.judo.technology/repository/maven-judong/"
+                    "url": "https://repository.judo.technology/repository/maven-judong/"
                 }
             ]
 
