@@ -153,6 +153,7 @@
                 <module>karaf-features-antlr</module>
                 <module>karaf-features-apache-commons</module>
                 <module>karaf-features-apache-httpclient</module>
+                <module>karaf-features-jackson</module>
                 <module>karaf-features-apache-poi</module>
                 <module>karaf-features-apache-arrow</module>
                 <module>karaf-features-common</module>
