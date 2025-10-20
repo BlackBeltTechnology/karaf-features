@@ -7,9 +7,10 @@
         <artifactId>parent</artifactId>
         <version>${revision}</version>
     </parent>
-    <artifactId>eclipse-epsilon-features</artifactId>
+
+    <artifactId>xdocreport-features</artifactId>
     <packaging>feature</packaging>
-    <name>Eclipse Epsilon Karaf features</name>
+    <name>XDocReport features</name>
 
     <build>
         <resources>
@@ -19,7 +20,7 @@
                 <targetPath>${project.build.directory}/feature</targetPath>
             </resource>
         </resources>
-            
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -33,7 +34,6 @@
                     </execution>
                 </executions>
             </plugin>
-
 
             <plugin>
                 <groupId>org.apache.karaf.tooling</groupId>
@@ -100,14 +100,11 @@
                                         <descriptor>mvn:org.apache.karaf.features/standard/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/enterprise/${karaf-version}/xml/features</descriptor>
                                         <descriptor>mvn:org.apache.karaf.features/spring/${karaf-version}/xml/features</descriptor>
-                                        <descriptor>mvn:org.apache.karaf.features/specs/${karaf-version}/xml/features</descriptor>
-                                        <descriptor>mvn:hu.blackbelt.karaf.features/antlr-features/${project.version}/xml/features</descriptor>
-                                        <descriptor>mvn:hu.blackbelt.karaf.features/bouncycastle-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-commons-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-httpclient-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/apache-poi-features/${project.version}/xml/features</descriptor>
-                                        <descriptor>mvn:hu.blackbelt.karaf.features/google-features/${project.version}/xml/features</descriptor>
-                                        <descriptor>mvn:hu.blackbelt.karaf.features/eclipse-emf-features/${project.version}/xml/features</descriptor>
+                                        <descriptor>mvn:hu.blackbelt.karaf.features/antlr-features/${project.version}/xml/features</descriptor>
+                                        <descriptor>mvn:hu.blackbelt.karaf.features/bouncycastle-features/${project.version}/xml/features</descriptor>
                                         <descriptor>mvn:hu.blackbelt.karaf.features/jackson-features/${project.version}/xml/features</descriptor>
                                         <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                                     </descriptors>
@@ -118,9 +115,35 @@
                                         <feature>shell-compat</feature>
                                     </framework>
                                     <features>
-                                        <feature>eclipse-epsilon</feature>
-                                        <feature>eclipse-epsilon-1</feature>
-                                        <feature>eclipse-epsilon-2</feature>
+                                        <feature>xdocreport-jaxb4</feature>
+                                        <feature>xdocreport-odfdom</feature>
+                                        <feature>xdocreport</feature>
+                                        <feature>xdocreport-core</feature>
+                                        <feature>xdocreport-converter-docx-docx4j</feature>
+                                        <feature>xdocreport-converter-docx-xwpf</feature>
+                                        <feature>xdocreport-converter-odt-odfdom</feature>
+                                        <feature>xdocreport-document-docx</feature>
+                                        <feature>xdocreport-document-odp</feature>
+                                        <feature>xdocreport-document-ods</feature>
+                                        <feature>xdocreport-document-odt</feature>
+                                        <feature>xdocreport-document-pptx</feature>
+                                        <feature>xdocreport-document-textstyling-wiki</feature>
+                                        <feature>xdocreport-template-freemarker</feature>
+                                        <feature>xdocreport-template-velocity</feature>
+
+                                        <feature>xdocreport-odfdom-converter-core</feature>
+                                        <feature>xdocreport-odfdom-converter-pdf-openpdf</feature>
+<!--                                        <feature>xdocreport-odfdom-converter-pdf</feature>-->
+<!--                                        <feature>xdocreport-converter-pdf-itext5</feature> -->
+                                        <feature>xdocreport-odfdom-converter-xhtml</feature>
+                                        <feature>xdocreport-poi-xwpf-converter-core</feature>
+                                        <feature>xdocreport-poi.xwpf-converter-pdf-openpdf</feature>
+<!--                                        <feature>xdocreport-poi-xwpf-converter-pdf</feature>-->
+<!--                                        <feature>xdocreport-poi-xwpf-converter-pdf-itext5</feature>-->
+                                        <feature>xdocreport-poi-xwpf-converter-xhtml</feature>
+                                        <feature>xdocreport-openpdf-extension</feature>
+<!--                                        <feature>xdocreport-itext-extension</feature>-->
+<!--                                        <feature>xdocreport-itext5-extension</feature>-->
                                     </features>
                                 </configuration>
                             </execution>
@@ -146,14 +169,6 @@
                 </dependency>
                 <dependency>
                     <groupId>org.apache.karaf.features</groupId>
-                    <artifactId>specs</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${karaf-version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.apache.karaf.features</groupId>
                     <artifactId>enterprise</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
@@ -162,31 +177,7 @@
                 </dependency>
                 <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
-                    <artifactId>antlr-features</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${project.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>hu.blackbelt.karaf.features</groupId>
-                    <artifactId>bouncycastle-features</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${project.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>hu.blackbelt.karaf.features</groupId>
                     <artifactId>apache-commons-features</artifactId>
-                    <classifier>features</classifier>
-                    <type>xml</type>
-                    <scope>runtime</scope>
-                    <version>${project.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>hu.blackbelt.karaf.features</groupId>
-                    <artifactId>apache-httpclient-features</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
                     <scope>runtime</scope>
@@ -202,7 +193,7 @@
                 </dependency>
                 <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
-                    <artifactId>google-features</artifactId>
+                    <artifactId>apache-httpclient-features</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
                     <scope>runtime</scope>
@@ -210,7 +201,15 @@
                 </dependency>
                 <dependency>
                     <groupId>hu.blackbelt.karaf.features</groupId>
-                    <artifactId>eclipse-emf-features</artifactId>
+                    <artifactId>antlr-features</artifactId>
+                    <classifier>features</classifier>
+                    <type>xml</type>
+                    <scope>runtime</scope>
+                    <version>${project.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>hu.blackbelt.karaf.features</groupId>
+                    <artifactId>bouncycastle-features</artifactId>
                     <classifier>features</classifier>
                     <type>xml</type>
                     <scope>runtime</scope>

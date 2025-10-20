@@ -27,10 +27,7 @@
         <bundle>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
         <bundle>mvn:com.google.flatbuffers/flatbuffers-java/24.12.23</bundle>
         <feature>apache-commons-codec</feature>
-        <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-core/${jackson-version}</bundle>
-        <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson-version}</bundle>
-        <bundle start-level="35">mvn:com.fasterxml.jackson.core/jackson-databind/${jackson-version}</bundle>
-        <bundle start-level="35">mvn:com.fasterxml.jackson.datatype/jackson-datatype-jsr310/${jackson-version}</bundle>
+        <feature>jackson-core</feature>
         <bundle>mvn:hu.blackbelt.bundles.arrow/org.apache.arrow/17.0.0_1</bundle>
     </feature>
 
