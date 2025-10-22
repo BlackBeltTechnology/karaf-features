@@ -111,7 +111,8 @@
                                         <feature>shell-compat</feature>
                                     </framework>
                                     <features>
-                                        <feature>jxls</feature>
+                                        <feature>jxls2</feature>
+                                        <feature>jxls3</feature>
                                     </features>
                                 </configuration>
                             </execution>
