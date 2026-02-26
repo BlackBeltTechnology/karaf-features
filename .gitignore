@@ -49,3 +49,8 @@ local.properties
 **/.DS_Store
 **/GSModel.log*
 **/.flattened-pom.xml
+.claude/commands/opsx
+.claude/skills/openspec-*.md
+.gemini
+.opencode
+.agent
