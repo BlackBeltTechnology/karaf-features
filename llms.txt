@@ -49,6 +49,15 @@ Key facts:
 
 - [karaf-features-openapi-generator/src/main/feature/feature.xml](karaf-features-openapi-generator/src/main/feature/feature.xml): OpenAPI Generator (currently commented out in parent POM)
 
+## Used by
+
+- [judo-platform](../../runtime/judo-platform): runtime/judo-platform
+- [judo-services](../../runtime/judo-services): runtime/judo-services
+- [judo-tatami](../../runtime/judo-tatami): runtime/judo-tatami
+- [osgi-email](../../runtime/osgi-email): runtime/osgi-email
+- [osgi-utils](../../runtime/osgi-utils): runtime/osgi-utils
+- [epsilon-runtime](../../tools/epsilon-runtime): tools/epsilon-runtime
+
 ## Optional
 
 - [pom.xml](pom.xml): Parent POM with version properties, module list, and build profiles
