@@ -1,0 +1,57 @@
+# Karaf Features
+
+> A collection of Apache Karaf OSGi feature descriptors that package 20+ third-party Java libraries for easy installation into a Karaf container.
+
+Key facts:
+- Java 21, no Java source code — XML feature descriptors only
+- Maven 3.9.4+ with Maven Wrapper, `<packaging>feature</packaging>` modules
+- 20 feature modules (19 active + 1 disabled), targeting Apache Karaf 4.4.7
+- Part of the JUDO platform ecosystem (BlackBelt Technology)
+- CI-friendly versioning via `${revision}` property (currently 2.0.2-SNAPSHOT)
+- License: Apache 2.0
+
+## Docs
+
+- [README.md](README.md): Project overview with module dependency diagram and build commands
+- [AGENTS.md](AGENTS.md): Developer guide with build commands, directory structure, and coding conventions
+- [CONTRIBUTING.md](CONTRIBUTING.md): Development setup and contribution guidelines
+- [.github/CIFLOW.md](.github/CIFLOW.md): CI/CD workflow documentation with diagrams
+
+## Modules — Foundational
+
+- [karaf-features-common/src/main/feature/feature.xml](karaf-features-common/src/main/feature/feature.xml): Utility bundles — javax-mail, threeten, opentelemetry, brotli4j, perfmark, re2j, lz4, lzma, jzlib
+- [karaf-features-antlr/src/main/feature/feature.xml](karaf-features-antlr/src/main/feature/feature.xml): ANTLR parser generators (v2, v3, v4) and StringTemplate
+- [karaf-features-bouncycastle/src/main/feature/feature.xml](karaf-features-bouncycastle/src/main/feature/feature.xml): BouncyCastle cryptography library (versions 1.69–1.81)
+- [karaf-features-jackson/src/main/feature/feature.xml](karaf-features-jackson/src/main/feature/feature.xml): Jackson JSON processing — core, JAX-RS, JAX-WS, data type modules
+- [karaf-features-eclipse-emf/src/main/feature/feature.xml](karaf-features-eclipse-emf/src/main/feature/feature.xml): Eclipse Modeling Framework (versions 2.12–2.39)
+- [karaf-features-javassist/src/main/feature/feature.xml](karaf-features-javassist/src/main/feature/feature.xml): Javassist bytecode manipulation library
+- [karaf-features-tinybundles/src/main/feature/feature.xml](karaf-features-tinybundles/src/main/feature/feature.xml): TinyBundles for programmatic OSGi bundle creation
+- [karaf-features-subethamail/src/main/feature/feature.xml](karaf-features-subethamail/src/main/feature/feature.xml): SubEtha Mail embedded SMTP server
+- [karaf-features-jdbc/src/main/feature/feature.xml](karaf-features-jdbc/src/main/feature/feature.xml): JDBC drivers — H2, PostgreSQL, Oracle (11.2–18.3), HSQLDB (2.3–2.7)
+
+## Modules — Mid-level
+
+- [karaf-features-apache-commons/src/main/feature/feature.xml](karaf-features-apache-commons/src/main/feature/feature.xml): 30+ Apache Commons libraries (beanutils, codec, collections, compress, io, lang3, csv, etc.)
+- [karaf-features-apache-httpclient/src/main/feature/feature.xml](karaf-features-apache-httpclient/src/main/feature/feature.xml): Apache HttpClient 3 and 4; depends on apache-commons
+- [karaf-features-apache-arrow/src/main/feature/feature.xml](karaf-features-apache-arrow/src/main/feature/feature.xml): Apache Arrow 17; depends on apache-commons and jackson
+- [karaf-features-apache-poi/src/main/feature/feature.xml](karaf-features-apache-poi/src/main/feature/feature.xml): Apache POI 3/4/5; depends on bouncycastle and apache-commons
+
+## Modules — High-level
+
+- [karaf-features-google/src/main/feature/feature.xml](karaf-features-google/src/main/feature/feature.xml): Google ecosystem — Guava (18–33), Guice (4/5/7), Gson, gRPC, BigQuery, Ads, Cloud APIs
+- [karaf-features-jxls/src/main/feature/feature.xml](karaf-features-jxls/src/main/feature/feature.xml): JXLS 2/3 Excel template engine; depends on apache-commons and apache-poi
+- [karaf-features-jasperreports/src/main/feature/feature.xml](karaf-features-jasperreports/src/main/feature/feature.xml): JasperReports 6/7; depends on jackson, apache-commons, google
+- [karaf-features-xdocreport/src/main/feature/feature.xml](karaf-features-xdocreport/src/main/feature/feature.xml): XDocReport with DOCX/ODT converters, PDF export, template engines (Freemarker, Velocity)
+- [karaf-features-eclipse-epsilon/src/main/feature/feature.xml](karaf-features-eclipse-epsilon/src/main/feature/feature.xml): Eclipse Epsilon 2.5 model transformation; depends on jackson, google, antlr, commons, poi, emf
+- [karaf-features-eclipse-xtext/src/main/feature/feature.xml](karaf-features-eclipse-xtext/src/main/feature/feature.xml): Eclipse Xtext 2.29/2.39 DSL framework; depends on eclipse-emf, google, antlr
+
+## Modules — Disabled
+
+- [karaf-features-openapi-generator/src/main/feature/feature.xml](karaf-features-openapi-generator/src/main/feature/feature.xml): OpenAPI Generator (currently commented out in parent POM)
+
+## Optional
+
+- [pom.xml](pom.xml): Parent POM with version properties, module list, and build profiles
+- [.github/workflows/build.yml](.github/workflows/build.yml): Main CI workflow — build, deploy, tag, release
+- [.github/workflows/release.yml](.github/workflows/release.yml): Manual release workflow
+- [LICENSE.txt](LICENSE.txt): Apache License 2.0
