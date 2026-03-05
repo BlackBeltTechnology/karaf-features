@@ -51,12 +51,12 @@ Key facts:
 
 ## Used by
 
-- [judo-platform](../../runtime/judo-platform): runtime/judo-platform
-- [judo-services](../../runtime/judo-services): runtime/judo-services
-- [judo-tatami](../../runtime/judo-tatami): runtime/judo-tatami
-- [osgi-email](../../runtime/osgi-email): runtime/osgi-email
-- [osgi-utils](../../runtime/osgi-utils): runtime/osgi-utils
-- [epsilon-runtime](../../tools/epsilon-runtime): tools/epsilon-runtime
+- [judo-platform](../../runtime/judo-platform): Model-driven OSGi runtime platform with REST APIs and Karaf deployment
+- [judo-services](../../runtime/judo-services): OSGi runtime services enabling multiple data models in a single Karaf container
+- [judo-tatami](../../runtime/judo-tatami): Model transformation pipeline — ESM/PSM to deployable application artifacts
+- [osgi-email](../../runtime/osgi-email): OSGi email service with Handlebars templates and attachments
+- [osgi-utils](../../runtime/osgi-utils): OSGi utility library — lifecycle tracking, config monitoring, ranked services
+- [epsilon-runtime](../../tools/epsilon-runtime): Eclipse Epsilon runtime for Maven and OSGi environments
 
 ## Optional
 
