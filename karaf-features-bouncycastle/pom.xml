@@ -113,6 +113,7 @@
                                         <feature>bouncycastle-1.69</feature>
                                         <feature>bouncycastle-1.70</feature>
                                         <feature>bouncycastle-1.78</feature>
+                                        <feature>bouncycastle-1.81</feature>
                                     </features>
                                 </configuration>
                             </execution>
